@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Availability | Doctor Portal</title><link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script><script src="doctor.js" defer></script>
+</head>
+<body data-page="availability">
+  <header class="header"><h1>Online Doctor Appointment System</h1><p>Doctor Portal</p></header>
+  <nav class="topnav" aria-label="Main navigation"><div class="nav-inner">
+    <a href="doctor-home.html">Home</a><a href="doctor-appointments.html">Appointments</a><a href="doctor-patients.html">Patients</a><a href="doctor-availability.html" class="active" aria-current="page">Availability</a><button type="button" class="nav-logout" data-logout>Logout</button>
+  </div></nav>
+  <main class="container">
+    <h2>Clinic Availability</h2><p class="note">Set working days, consulting hours, appointment length and room. Times use Asia/Dhaka.</p>
+    <section class="card">
+      <form id="availabilityForm">
+        <p class="note mobile-hint">Swipe the schedule sideways to see start and end times.</p><div class="table-scroll"><table class="data-table schedule-table"><thead><tr><th scope="col">Working day</th><th scope="col">Start time</th><th scope="col">End time</th></tr></thead><tbody id="scheduleRows"></tbody></table></div>
+        <div class="form-row"><label for="duration">Appointment duration</label><select id="duration"><option value="15">15 minutes</option><option value="30">30 minutes</option><option value="45">45 minutes</option><option value="60">60 minutes</option></select></div>
+        <div class="form-row"><label for="room">Consultation room</label><input id="room" type="text" maxlength="60" required></div>
+        <p id="availabilityMessage" class="note" role="status" aria-live="polite"></p>
+        <div class="actions"><button type="submit">Save Availability</button><button type="button" class="secondary" id="resetAvailability">Restore defaults</button></div>
+      </form>
+    </section>
+    <p class="note">Availability is a demo setting only. It does not create time slots or alter existing appointments.</p>
+  </main>
+  <footer class="footer">Online Doctor Appointment System - Academic Project</footer>
+</body>
+</html>

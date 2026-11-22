@@ -1,0 +1,532 @@
+
+/* ---------- 1. Reset (universal selector + box-sizing tip) ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f7f9;
+  color: #333;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* grouping selector */
+h2, h3 {
+  color: #14506a;
+}
+
+h2 {
+  margin: 0 0 16px 0;
+}
+
+h3 {
+  margin: 24px 0 12px 0;
+}
+
+a {
+  color: #1f6f8b;
+}
+
+a:hover {
+  color: #e67300;
+}
+
+/* ---------- 2. Page layout: header, nav, container, footer ---------- */
+.header {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 4px solid #1f6f8b;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #14506a;
+}
+
+.header p {
+  margin: 4px 0 0 0;
+  color: #555;
+}
+
+/* navigation bar: inline-block links, sticky on top (Exercise 2) */
+.topnav {
+  background-color: #1f6f8b;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.topnav a {
+  display: inline-block;
+  padding: 14px 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.topnav a:hover,
+.topnav a.active {
+  background-color: #14506a;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.footer {
+  background-color: white;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ---------- 3. Three-column layout 25% / 50% / 25% (floats) ---------- */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  min-width: 230px;
+}
+
+.column.side {
+  width: 25%;
+}
+
+.column.middle {
+  width: 50%;
+  min-width: 320px;
+}
+
+/* ---------- 4. Cards (profile card, login card, hero) ---------- */
+.hero {
+  background-color: #1f6f8b;
+  color: white;
+  text-align: center;
+  padding: 32px 20px;
+  border-radius: 12px;
+}
+
+.hero h2 {
+  color: white;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 8px auto;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-left: 6px solid #1f6f8b;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-card {
+  max-width: 420px;
+  margin: 24px auto;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile h3 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.profile p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* round "photo": equal width and height, border-radius 50% */
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 12px auto;
+  border-radius: 50%;
+  background-color: #1f6f8b;
+  color: white;
+  font-size: 2rem;
+  line-height: 80px;
+  text-align: center;
+}
+
+/* ---------- 5. Dashboard number boxes (display: flex) ---------- */
+.stats {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.stat {
+  flex: 1;
+  margin: 6px;
+  padding: 14px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: 4px solid #1f6f8b;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: 1.8rem;
+  color: #14506a;
+}
+
+.stat span {
+  font-size: 14px;
+  color: #555;
+}
+
+.stat:hover {
+  background-color: #e8f3f7;
+}
+
+/* ---------- 6. Notice board (fixed height + overflow-y) ---------- */
+.notice {
+  height: 150px;
+  overflow-y: auto;
+  padding: 8px 12px;
+  background-color: #e8f3f7;
+  border-left: 6px solid #1f6f8b;
+}
+
+.notice ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+/* ---------- 7. Buttons ---------- */
+button,
+input[type="submit"],
+input[type="reset"],
+.btn {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 8px 18px;
+  color: white;
+  background-color: #1f6f8b;
+  border: 1px solid #1f6f8b;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.btn:hover {
+  background-color: #3b91ae;
+  color: white;
+}
+
+/* attribute selector: a disabled button looks faded */
+button[disabled],
+input[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.secondary,
+button.filter {
+  color: #1f6f8b;
+  background-color: white;
+}
+
+.secondary:hover,
+button.filter:hover {
+  background-color: #e8f3f7;
+  color: #14506a;
+}
+
+button.filter.active {
+  color: white;
+  background-color: #1f6f8b;
+}
+
+button.small {
+  font-size: 0.85rem;
+  padding: 3px 10px;
+}
+
+button.danger {
+  color: #b3261e;
+  background-color: white;
+  border-color: #b3261e;
+}
+
+button.danger:hover {
+  background-color: #fbe9e7;
+  color: #b3261e;
+}
+
+/* ---------- 8. Forms ---------- */
+fieldset {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+legend {
+  padding: 0 8px;
+  font-weight: bold;
+  color: #14506a;
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-table td {
+  padding: 6px 8px;
+  vertical-align: top;
+}
+
+.form-table label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+input[type="search"],
+select,
+textarea {
+  font-size: 1rem;
+  padding: 8px 10px;
+  color: #333;
+  background-color: white;
+  border: 1px solid #888;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.form-table input[type="text"],
+.form-table input[type="email"],
+.form-table input[type="password"],
+.form-table input[type="number"],
+.form-table input[type="date"],
+.form-table input[type="tel"],
+.form-table select,
+.form-table textarea {
+  width: 100%;
+  max-width: 300px;
+}
+
+textarea {
+  font-family: inherit;
+  resize: none;
+}
+
+/* keep the focus visible (slide: :focus) */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a:focus {
+  outline: 3px solid orange;
+}
+
+.toolbar {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.toolbar label {
+  margin-right: 16px;
+}
+
+.toolbar input,
+.toolbar select {
+  margin-left: 6px;
+}
+
+/* messages written by JavaScript */
+.err {
+  font-size: 13px;
+  color: red;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.note {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ---------- 9. Data tables ---------- */
+.table-scroll {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  font-size: 14px;
+  text-align: left;
+}
+
+.data-table caption {
+  padding: 8px;
+  font-weight: bold;
+  text-align: left;
+  color: #14506a;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.data-table thead th {
+  background-color: #eeeeee;
+  border-bottom: 2px solid #1f6f8b;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f6f9fc;
+}
+
+.data-table tbody tr:hover {
+  background-color: #e4eef6;
+}
+
+/* ---------- 10. Status colours ---------- */
+.status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.confirmed {
+  color: #21633a;
+}
+
+.pending {
+  color: #815700;
+}
+
+.completed {
+  color: #315e87;
+}
+
+.cancelled {
+  color: #8c1f1f;
+}
+
+/* ---------- 11. Modal pop-up (Exercise 3) ---------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+.dialog {
+  position: relative;
+  max-width: 400px;
+  margin: 120px auto 0 auto;
+  padding: 28px 24px 24px 24px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.dialog h3 {
+  margin-top: 0;
+}
+
+.dialog .close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  padding: 0 8px;
+  font-size: 1.4rem;
+  color: #555;
+  background-color: white;
+  border: none;
+}
+
+/* Doctor pages keep the Patient Portal palette and layout. */
+.topnav .nav-inner { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; }
+.topnav .nav-logout { margin-left: auto; min-height: 48px; padding: 12px 18px; border: 0; border-radius: 0; background: transparent; color: #fff; }
+.topnav .nav-logout:hover { background-color: #14506a; }
+.login-card button { width: 100%; }
+.search-toolbar { display: flex; align-items: center; gap: 10px; }
+.search-toolbar label { font-weight: bold; }
+.search-toolbar input { min-width: 260px; }
+.data-table td small { display: block; margin-top: 3px; color: #555; font-size: 13px; }
+.schedule-table { min-width: 540px; }
+.schedule-table th:first-child { min-width: 160px; }
+.schedule-table .day-label { display: inline-flex; align-items: center; min-height: 44px; gap: 8px; }
+input[type="time"] { min-height: 40px; padding: 6px 8px; color: #333; background: #fff; border: 1px solid #888; border-radius: 4px; font: inherit; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.nav-logout:focus-visible { outline: 3px solid orange; }
+@media (max-width: 760px) {
+  .topnav .nav-inner { justify-content: center; }
+  .topnav .nav-logout { margin-left: 0; }
+  .search-toolbar { align-items: stretch; flex-direction: column; }
+  .search-toolbar input { width: 100%; min-width: 0; }
+  .schedule-table { min-width: 540px; }
+}
+
+.doctor-notice { height: auto; max-height: 220px; overflow-y: auto; }
+
+body[data-page="home"] .data-table { min-width: 0; }
+body[data-page="appointments"] .data-table { min-width: 820px; }
+body[data-page="patients"] .data-table { min-width: 780px; }
+.data-table td button + button { margin-left: 4px; }
+.mobile-hint { display: none; }
+.form-row { display: grid; grid-template-columns: minmax(150px, 1fr) minmax(200px, 320px); align-items: center; gap: 12px; margin: 16px 0; }
+.form-row > label { font-weight: bold; }
+.form-row input, .form-row select { width: 100%; max-width: 320px; }
+@media (max-width: 760px) {
+  .mobile-hint { display: block; margin: 8px 0; }
+  .form-row { grid-template-columns: 1fr; gap: 6px; }
+  .form-row input, .form-row select { max-width: none; }
+}
+
+@media (max-width: 760px) { body[data-page="home"] .data-table { min-width: 520px; } }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointments | Doctor Portal</title><link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script><script src="doctor.js" defer></script>
+</head>
+<body data-page="appointments">
+  <header class="header"><h1>Online Doctor Appointment System</h1><p>Doctor Portal</p></header>
+  <nav class="topnav" aria-label="Main navigation"><div class="nav-inner">
+    <a href="doctor-home.html">Home</a><a href="doctor-appointments.html" class="active" aria-current="page">Appointments</a><a href="doctor-patients.html">Patients</a><a href="doctor-availability.html">Availability</a><button type="button" class="nav-logout" data-logout>Logout</button>
+  </div></nav>
+  <main class="container">
+    <h2>Appointments</h2><p class="note">Confirm, complete or cancel appointments. Changes are saved only in this browser.</p>
+    <div class="toolbar filters" role="group" aria-label="Filter appointments by status">
+      <button type="button" class="filter active" data-filter="All">All</button><button type="button" class="filter" data-filter="Confirmed">Confirmed</button><button type="button" class="filter" data-filter="Pending">Pending</button><button type="button" class="filter" data-filter="Completed">Completed</button><button type="button" class="filter" data-filter="Cancelled">Cancelled</button>
+    </div>
+    <div class="toolbar search-toolbar"><label for="appointmentSearch">Search patient or reason:</label><input type="search" id="appointmentSearch" placeholder="Type a name or keyword"></div>
+    <p class="note mobile-hint">Swipe the table sideways to view all columns.</p><div class="table-scroll"><table class="data-table"><thead><tr><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Patient</th><th scope="col">Reason</th><th scope="col">Status</th><th scope="col">Action</th></tr></thead><tbody id="appointmentRows"></tbody></table></div>
+    <p class="note" id="appointmentCount" aria-live="polite"></p>
+  </main>
+  <footer class="footer">Online Doctor Appointment System - Academic Project</footer>
+</body>
+</html>
