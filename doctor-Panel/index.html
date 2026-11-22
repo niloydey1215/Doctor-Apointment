@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Doctor login for the Online Doctor Appointment System demo">
+  <title>Doctor Login | Online Doctor Appointment System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="login.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Online Doctor Appointment System</h1>
+    <p>Doctor Portal</p>
+  </header>
+  <nav class="topnav" aria-label="Main navigation">
+    <a href="index.html" class="active" aria-current="page">Doctor Login</a>
+  </nav>
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome, Doctor</h2>
+      <p>Manage your appointments, patients and clinic availability.</p>
+    </section>
+    <section class="card login-card">
+      <h2>Doctor Login</h2>
+      <form id="loginForm">
+        <table class="form-table">
+          <tr><td><label for="email">Email:</label></td><td><input type="email" id="email" autocomplete="username" required></td></tr>
+          <tr><td><label for="password">Password:</label></td><td><input type="password" id="password" autocomplete="current-password" required></td></tr>
+        </table>
+        <p id="loginMessage" class="error" role="alert" aria-live="polite"></p>
+        <button type="submit">Login</button>
+      </form>
+      <p class="note">Demo account: <strong>doctor@example.com</strong>, password <strong>demo1234</strong></p>
+      <p class="note">Demo only: this no-database version stores sample changes in this browser. Do not enter real patient information.</p>
+    </section>
+  </main>
+  <footer class="footer">Online Doctor Appointment System - Academic Project</footer>
+</body>
+</html>
