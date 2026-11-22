@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Manage Doctors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo">ONLINE DOCTOR<br><span>ADMIN PANEL</span></div>
+        <nav class="menu">
+            <div class="menu-title">MAIN MENU</div><a class="" href="index.html">Dashboard</a>
+            <div class="menu-title">MANAGEMENT</div><a class="active" href="doctors.html">Manage Doctors</a><a class=""
+                href="receptionists.html">Manage Receptionists</a><a class="" href="patients.html">Manage Patients</a><a
+                class="" href="appointments.html">Appointments</a><a class="" href="payments.html">Payments</a>
+            <div class="menu-title">SYSTEM</div><a class="" href="reports.html">Reports</a><a class=""
+                href="settings.html">Settings</a><a href="../Main Website/log in.html"
+                onclick="localStorage.removeItem('odASession')">Logout</a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Manage Doctors</h2>
+            <div class="admin-info">
+                <div class="avatar">A</div>Administrator
+            </div>
+        </header>
+        <h3>Manage Doctors</h3>
+        <div class="form-box">
+            <h3 id="doctorFormTitle">Create Doctor Account</h3>
+            <form id="doctorForm"><label>Doctor Name</label><input id="doctorName" required><label>Email
+                    Address</label><input id="doctorEmail" type="email" required><label>Specialization</label><input
+                    id="doctorSpecialization" required><label>Phone Number</label><input id="doctorPhone"
+                    required><label>Password</label><input id="doctorPassword" type="password" required><button
+                    id="doctorSubmit">Create Doctor</button><button type="button" class="btn-secondary"
+                    id="doctorClear">Clear</button></form>
+        </div>
+        <div class="panel">
+            <div class="panel-header">
+                <h3>Doctor List</h3><input class="search" data-search="doctorTable" placeholder="Search doctor">
+            </div>
+            <table id="doctorTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Specialization</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dr. Ahmed</td>
+                        <td>ahmed@gmail.com</td>
+                        <td>Cardiologist</td>
+                        <td>01700000001</td>
+                        <td><button data-action="edit-doctor" class="btn-warning">Edit</button> <button
+                                data-action="delete" class="btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="admin.js"></script>
+</body>
+
+</html>

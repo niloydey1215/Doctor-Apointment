@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Manage Patients</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo">ONLINE DOCTOR<br><span>ADMIN PANEL</span></div>
+        <nav class="menu">
+            <div class="menu-title">MAIN MENU</div><a class="" href="index.html">Dashboard</a>
+            <div class="menu-title">MANAGEMENT</div><a class="" href="doctors.html">Manage Doctors</a><a class=""
+                href="receptionists.html">Manage Receptionists</a><a class="active" href="patients.html">Manage
+                Patients</a><a class="" href="appointments.html">Appointments</a><a class=""
+                href="payments.html">Payments</a>
+            <div class="menu-title">SYSTEM</div><a class="" href="reports.html">Reports</a><a class=""
+                href="settings.html">Settings</a><a href="../Main Website/log in.html"
+                onclick="localStorage.removeItem('odASession')">Logout</a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Manage Patients</h2>
+            <div class="admin-info">
+                <div class="avatar">A</div>Administrator
+            </div>
+        </header>
+        <h3>Registered Patients</h3>
+        <div class="panel">
+            <div class="panel-header">
+                <h3>Patient List</h3><input class="search" data-search="patientTable" placeholder="Search patient">
+            </div>
+            <table id="patientTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Rahim Ahmed</td>
+                    <td>rahim@gmail.com</td>
+                    <td>01700000000</td>
+                    <td>Male</td>
+                    <td><button data-action="delete" class="btn-danger">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Karim Hasan</td>
+                    <td>karim@gmail.com</td>
+                    <td>01800000000</td>
+                    <td>Male</td>
+                    <td><button data-action="delete" class="btn-danger">Delete</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="admin.js"></script>
+</body>
+
+</html>

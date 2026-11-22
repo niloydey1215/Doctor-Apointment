@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Online Doctor Appointment System</title>
+
+<link rel="stylesheet" href="log-in.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <a href="home page.html" class="back-home">← Back to Home</a>
+
+    <div class="logo">
+        <h2>Online Doctor Appointment System</h2>
+        <p>Your Health, Our Priority</p>
+    </div>
+
+    <h3>Welcome Back!</h3>
+    <p class="subtitle">Please login to your account.</p>
+
+    <form onsubmit="loginUser(event)">
+
+        <div class="form-group">
+            <label for="role">Account Type</label>
+
+            <select id="role" required>
+                <option value="">Select Account Type</option>
+                <option value="patient">Patient</option>
+                <option value="doctor">Doctor</option>
+                <option value="receptionist">Receptionist</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email / Login ID</label>
+            <input
+                type="text"
+                id="email"
+                placeholder="Enter your email or login ID"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+            >
+        </div>
+
+        <div class="remember-row">
+
+            <div class="remember">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+
+            <a href="forgot password.html" class="forgot">
+                Forgot Password?
+            </a>
+
+        </div>
+
+        <button type="submit" class="login-btn">
+            Login
+        </button>
+
+    </form>
+
+    <!-- ADMIN DEMO LOGIN -->
+
+    <div class="demo-login">
+        <h4>Admin Demo Login Credentials</h4>
+
+        <p>
+            Login ID:
+            <span>admin@gmail.com</span>
+        </p>
+
+        <p>
+            Password:
+            <span>Admin123</span>
+        </p>
+    </div>
+
+    <div class="signup-text">
+        Don't have a patient account?
+        <a href="sign up.html">Sign Up</a>
+    </div>
+
+    <div class="footer">
+        © 2026 Online Doctor Appointment System. All Rights Reserved.
+    </div>
+
+</div>
+
+<script src="log-in.js"></script>
+
+</body>
+</html>

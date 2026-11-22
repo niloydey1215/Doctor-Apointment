@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo">ONLINE DOCTOR<br><span>ADMIN PANEL</span></div>
+        <nav class="menu">
+            <div class="menu-title">MAIN MENU</div><a class="active" href="index.html">Dashboard</a>
+            <div class="menu-title">MANAGEMENT</div><a class="" href="doctors.html">Manage Doctors</a><a class=""
+                href="receptionists.html">Manage Receptionists</a><a class="" href="patients.html">Manage Patients</a><a
+                class="" href="appointments.html">Appointments</a><a class="" href="payments.html">Payments</a>
+            <div class="menu-title">SYSTEM</div><a class="" href="reports.html">Reports</a><a class=""
+                href="settings.html">Settings</a><a href="../Main Website/log in.html"
+                onclick="localStorage.removeItem('odASession')">Logout</a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Dashboard</h2>
+            <div class="admin-info">
+                <div class="avatar">A</div>Administrator
+            </div>
+        </header>
+        <section class="welcome">
+            <h2>Welcome, Admin!</h2>
+            <p>Here is what's happening in your hospital today.</p>
+        </section>
+        <div class="cards">
+            <div class="card">👨‍⚕️<p>Total Doctors</p>
+                <h2 id="totalDoctors">25</h2>
+            </div>
+            <div class="card">👥<p>Total Patients</p>
+                <h2 id="totalPatients">450</h2>
+            </div>
+            <div class="card">🧑‍💼<p>Receptionists</p>
+                <h2 id="totalReceptionists">12</h2>
+            </div>
+            <div class="card">📅<p>Total Appointments</p>
+                <h2>180</h2>
+            </div>
+        </div>
+        <div class="panel">
+            <h3>Recent Appointments</h3>
+            <table>
+                <tr>
+                    <th>Patient</th>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Rahim Ahmed</td>
+                    <td>Dr. Ahmed</td>
+                    <td>21 Nov 2026</td>
+                    <td>Confirmed</td>
+                </tr>
+                <tr>
+                    <td>Karim Hasan</td>
+                    <td>Dr. Sara</td>
+                    <td>22 Nov 2026</td>
+                    <td>Pending</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="admin.js"></script>
+</body>
+
+</html>

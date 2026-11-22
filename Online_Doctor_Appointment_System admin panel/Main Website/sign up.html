@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Sign Up | Online Doctor Appointment System</title>
+
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+
+<body>
+
+    <!-- Registration Form -->
+
+    <div class="container">
+
+        <div class="signup-card">
+
+            <a href="home page.html" class="back-link">
+                ← Back to Home
+            </a>
+
+            <h1>Create Patient Account</h1>
+
+            <p class="subtitle">
+                Register to find doctors and book your appointments.
+            </p>
+
+            <form id="signupForm">
+
+                <div class="form-group">
+
+                    <label for="fullName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="gender">Gender</label>
+
+                        <select id="gender" name="gender" required>
+
+                            <option value="" disabled selected>
+                                Select Gender
+                            </option>
+
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="dob">Date of Birth</label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="address">Address</label>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        placeholder="Enter your full address"
+                        required
+                    ></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        minlength="8"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        required
+                    >
+
+                </div>
+
+                <button type="submit" class="signup-btn">
+                    Create Account
+                </button>
+
+                <p id="message" class="message"></p>
+
+            </form>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="log in.html">Log In</a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Registration Success Popup -->
+
+    <div id="successModal" class="success-modal">
+
+        <div class="success-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>Registration Successful!</h2>
+
+            <p>
+                Your account has been created successfully.
+                Welcome to Online Doctor Appointment System.
+            </p>
+
+            <button onclick="closeSuccess()">
+                Continue to Login
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="sign-up.js"></script>
+
+</body>
+
+</html>

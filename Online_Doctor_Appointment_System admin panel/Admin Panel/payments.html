@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Payment Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo">ONLINE DOCTOR<br><span>ADMIN PANEL</span></div>
+        <nav class="menu">
+            <div class="menu-title">MAIN MENU</div><a class="" href="index.html">Dashboard</a>
+            <div class="menu-title">MANAGEMENT</div><a class="" href="doctors.html">Manage Doctors</a><a class=""
+                href="receptionists.html">Manage Receptionists</a><a class="" href="patients.html">Manage Patients</a><a
+                class="" href="appointments.html">Appointments</a><a class="" href="payments.html">Payments</a>
+            <div class="menu-title">SYSTEM</div><a class="" href="reports.html">Reports</a><a class=""
+                href="settings.html">Settings</a><a href="../Main Website/log in.html"
+                onclick="localStorage.removeItem('odASession')">Logout</a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Payment Management</h2>
+            <div class="admin-info">
+                <div class="avatar">A</div>Administrator
+            </div>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <p>Total Revenue</p>
+                <h2>৳45,000</h2>
+            </div>
+            <div class="card">
+                <p>Pending Payments</p>
+                <h2>৳5,000</h2>
+            </div>
+        </div>
+        <div class="panel">
+            <h3>Payment Records</h3>
+            <table>
+                <tr>
+                    <th>Patient</th>
+                    <th>Appointment</th>
+                    <th>Amount</th>
+                    <th>Payment Method</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Rahim Ahmed</td>
+                    <td>#101</td>
+                    <td>৳1000</td>
+                    <td>Cash</td>
+                    <td><span class="status paid">Paid</span></td>
+                </tr>
+                <tr>
+                    <td>Karim Hasan</td>
+                    <td>#102</td>
+                    <td>৳800</td>
+                    <td>Online</td>
+                    <td><span class="status unpaid">Pending</span></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="admin.js"></script>
+</body>
+
+</html>
