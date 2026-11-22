@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta name="description" content="Patient login for the Online Doctor Appointment System">
+  <title>Homepage | Online Doctor Appointment System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="login.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Online Doctor Appointment System</h1>
+    <p>Patient Portal</p>
+  </header>
+
+  <nav class="topnav">
+    <a href="index.html" class="active">Login</a>
+    <a href="registration.html">Register</a>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome to Our Hospital</h2>
+      <p>Find a doctor, book an appointment and manage your visits online.</p>
+    </section>
+
+    <section class="card login-card">
+      <h2>Patient Login</h2>
+      <form action="patient-home.html" method="get" onsubmit="return validateForm()">
+        <table class="form-table">
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email"></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" minlength="8"></td>
+          </tr>
+        </table>
+        <p id="msg"></p>
+        <input type="submit" value="Login">
+      </form>
+      <p class="note">Demo account: <strong>patient@example.com</strong>, password <strong>demo1234</strong></p>
+      <p>New patient? <a href="registration.html">Create an account</a></p>
+    </section>
+  </main>
+</body>
+</html>

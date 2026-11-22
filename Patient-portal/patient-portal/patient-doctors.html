@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find a doctor in the Online Doctor Appointment System">
+  <title>Find Doctors | Patient Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="doctors.js" defer></script>
+</head>
+<body onload="startDoctors()">
+  <header class="header">
+    <h1>Online Doctor Appointment System</h1>
+    <p>Patient Portal</p>
+  </header>
+
+  <nav class="topnav">
+    <a href="patient-home.html">Home</a>
+    <a href="patient-doctors.html" class="active">Find Doctors</a>
+    <a href="patient-appointments.html">My Appointments</a>
+    <a href="index.html">Logout</a>
+  </nav>
+
+  <main class="container">
+    <h2>Find a Doctor</h2>
+
+    <div class="toolbar">
+      <label>Search
+        <input type="search" id="search" placeholder="Name or specialty" onkeyup="applyFilters()">
+      </label>
+      <label>Specialty
+        <select id="specialty" onchange="applyFilters()">
+          <option value="all">All</option>
+        </select>
+      </label>
+      <label>Sort by
+        <select id="sortBy" onchange="applyFilters()">
+          <option value="none">Default</option>
+          <option value="fee">Fee: low to high</option>
+          <option value="rating">Rating: high to low</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="table-scroll">
+      <table class="data-table">
+        <caption>Available doctors</caption>
+        <thead>
+          <tr><th>Doctor</th><th>Specialty</th><th>Clinic days</th><th>Fee</th><th>Rating</th></tr>
+        </thead>
+        <tbody id="doctorRows"></tbody>
+      </table>
+    </div>
+    <p class="note" id="count"></p>
+    <p><a class="btn" href="patient-appointments.html">Book an appointment</a></p>
+  </main>
+
+  <footer class="footer">Online Doctor Appointment System - Academic Project</footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Patient registration for the Online Doctor Appointment System">
+  <title>Register | Online Doctor Appointment System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="register.js" defer></script>
+</head>
+<body onload="setupTerms()">
+  <header class="header">
+    <h1>Online Doctor Appointment System</h1>
+    <p>Patient Portal</p>
+  </header>
+
+  <nav class="topnav">
+    <a href="index.html">Login</a>
+    <a href="registration.html" class="active">Register</a>
+  </nav>
+
+  <main class="container">
+    <h2>Patient Registration Form</h2>
+    <p class="note">Demo only: do not enter real patient information.</p>
+
+    <form onsubmit="return validateForm()" onreset="resetForm()">
+
+      <fieldset>
+        <legend>Patient Personal Information</legend>
+        <table class="form-table">
+          <tr>
+            <td><label for="PatientName">Patient Name:</label></td>
+            <td><input type="text" id="PatientName" name="PatientName" placeholder="Enter your name"></td>
+            <td><span class="err" id="nameErr"></span></td>
+          </tr>
+          <tr>
+            <td><label for="PatientAge">Patient Age:</label></td>
+            <td><input type="number" id="PatientAge" name="PatientAge" placeholder="Enter your age"></td>
+            <td><span class="err" id="ageErr"></span></td>
+          </tr>
+          <tr>
+            <td><label for="PatientEmail">Patient Email:</label></td>
+            <td><input type="email" id="PatientEmail" name="PatientEmail" placeholder="Enter your email"></td>
+            <td><span class="err" id="emailErr"></span></td>
+          </tr>
+          <tr>
+            <td><label for="PatientPhone">Patient Phone:</label></td>
+            <td><input type="tel" id="PatientPhone" name="PatientPhone" placeholder="01XXXXXXXXX"></td>
+            <td><span class="err" id="phoneErr"></span></td>
+          </tr>
+          <tr>
+            <td>Patient Gender:</td>
+            <td>
+              <input type="radio" id="PatientMale" name="Gender" value="Male">
+              <label for="PatientMale">Male</label>
+              <input type="radio" id="PatientFemale" name="Gender" value="Female">
+              <label for="PatientFemale">Female</label>
+            </td>
+            <td><span class="err" id="genderErr"></span></td>
+          </tr>
+          <tr>
+            <td><label for="PatientDOB">Patient DOB:</label></td>
+            <td><input type="date" id="PatientDOB" name="PatientDOB"></td>
+            <td><span class="err" id="dobErr"></span></td>
+          </tr>
+          <tr>
+            <td><label for="PatientAddress">Patient Address:</label></td>
+            <td><textarea id="PatientAddress" name="PatientAddress" rows="4" cols="20" placeholder="Your address"></textarea></td>
+            <td><span class="err" id="addressErr"></span></td>
+          </tr>
+          <tr>
+            <td><label for="Prescription">Old Prescription:</label></td>
+            <td><input type="file" id="Prescription" name="Prescription"> (optional)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Preferred Doctor Dept:</td>
+            <td>
+              <input type="checkbox" id="Medicine" name="DeptDoctor" value="Medicine">
+              <label for="Medicine">Medicine</label><br>
+              <input type="checkbox" id="Cardiology" name="DeptDoctor" value="Cardiology">
+              <label for="Cardiology">Cardiology</label><br>
+              <input type="checkbox" id="Neurology" name="DeptDoctor" value="Neurology">
+              <label for="Neurology">Neurology</label><br>
+              <input type="checkbox" id="Pediatrics" name="DeptDoctor" value="Pediatrics">
+              <label for="Pediatrics">Pediatrics</label>
+            </td>
+            <td><span class="err" id="deptErr"></span></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>User Profile</legend>
+        <table class="form-table">
+          <tr>
+            <td><label for="Username">User Name:</label></td>
+            <td><input type="text" id="Username" name="Username"></td>
+            <td><span class="err" id="userErr"></span></td>
+          </tr>
+          <tr>
+            <td><label for="Password">Password:</label></td>
+            <td><input type="password" id="Password" name="Password"></td>
+            <td><span class="err" id="passErr"></span></td>
+          </tr>
+          <tr>
+            <td><label for="ConfirmPassword">Confirm Password:</label></td>
+            <td><input type="password" id="ConfirmPassword" name="ConfirmPassword"></td>
+            <td><span class="err" id="confirmErr"></span></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" id="Condition" name="Condition" value="Agree">
+              <label for="Condition">I Agree Terms and Condition *</label>
+            </td>
+            <td><span class="err" id="termsErr"></span></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <input type="submit" id="signupBtn" value="Register" disabled>
+      <input type="reset" class="secondary" value="Reset">
+      <p id="formMsg"></p>
+      <ul id="summary"></ul>
+    </form>
+  </main>
+
+  <footer class="footer">Online Doctor Appointment System - Academic Project</footer>
+</body>
+</html>

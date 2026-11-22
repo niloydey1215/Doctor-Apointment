@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View, book and cancel appointments in the Online Doctor Appointment System">
+  <title>My Appointments | Patient Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="appointments.js" defer></script>
+</head>
+<body onload="startAppointments()">
+  <header class="header">
+    <h1>Online Doctor Appointment System</h1>
+    <p>Patient Portal</p>
+  </header>
+
+  <nav class="topnav">
+    <a href="patient-home.html">Home</a>
+    <a href="patient-doctors.html">Find Doctors</a>
+    <a href="patient-appointments.html" class="active">My Appointments</a>
+    <a href="index.html">Logout</a>
+  </nav>
+
+  <main class="container">
+    <h2>My Appointments</h2>
+
+    <div class="toolbar">
+      <button type="button" class="filter active" value="all">All</button>
+      <button type="button" class="filter" value="confirmed">Confirmed</button>
+      <button type="button" class="filter" value="pending">Pending</button>
+      <button type="button" class="filter" value="completed">Completed</button>
+      <button type="button" class="filter" value="cancelled">Cancelled</button>
+    </div>
+
+    <div class="table-scroll">
+      <table class="data-table">
+        <caption>Your appointments</caption>
+        <thead>
+          <tr><th>Date and time</th><th>Doctor</th><th>Reason</th><th>Status</th><th>Action</th></tr>
+        </thead>
+        <tbody id="appointmentRows"></tbody>
+      </table>
+    </div>
+    <p class="note" id="count"></p>
+
+    <h3>Book an appointment</h3>
+    <form onsubmit="return validateBooking()">
+      <fieldset>
+        <legend>New appointment</legend>
+        <table class="form-table">
+          <tr>
+            <td><label for="bookDoctor">Doctor:</label></td>
+            <td>
+              <select id="bookDoctor" name="bookDoctor" required>
+                <option value="">-- Select doctor --</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="bookDate">Date:</label></td>
+            <td><input type="date" id="bookDate" name="bookDate" min="2026-11-22" required></td>
+          </tr>
+          <tr>
+            <td><label for="bookTime">Time slot:</label></td>
+            <td>
+              <select id="bookTime" name="bookTime" required>
+                <option value="">-- Select slot --</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="10:30">10:30 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="11:30">11:30 AM</option>
+                <option value="17:00">5:00 PM</option>
+                <option value="17:30">5:30 PM</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="bookReason">Reason for visit:</label></td>
+            <td><textarea id="bookReason" name="bookReason" rows="3" cols="20" minlength="5" maxlength="255" required></textarea></td>
+          </tr>
+        </table>
+      </fieldset>
+      <input type="submit" value="Request Appointment">
+      <p id="bookMsg"></p>
+    </form>
+  </main>
+
+  <!-- modal pop-up: hidden with display: none until the class "show" is added -->
+  <div class="overlay" id="overlay">
+    <div class="dialog">
+      <button type="button" class="close" onclick="closeModal()">&times;</button>
+      <h3>Cancel appointment?</h3>
+      <p id="cancelText"></p>
+      <button type="button" class="danger" onclick="confirmCancel()">Yes, cancel it</button>
+      <button type="button" class="secondary" onclick="closeModal()">Keep it</button>
+    </div>
+  </div>
+
+  <footer class="footer">Online Doctor Appointment System - Academic Project</footer>
+</body>
+</html>
