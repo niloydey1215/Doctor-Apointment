@@ -1,0 +1,3370 @@
+/* Online Doctor Appointment System
+   External stylesheet. Page styles are scoped by body class.
+   Concepts: selectors, grouping, box model, display, positioning,
+   pseudo-classes, responsive sizing and hover states.
+*/
+
+/* Styles from receptionist profile(1).html */
+
+
+body.receptionist-profile-1-html * {margin:0;padding:0;box-sizing:border-box}
+
+
+body.receptionist-profile-1-html {font-family:Arial,Helvetica,sans-serif;background:#f2f8f7;color:#183b3a}
+
+
+body.receptionist-profile-1-html a {text-decoration:none;color:inherit}
+
+
+body.receptionist-profile-1-html .layout {display:flex;min-height:100vh}
+
+
+body.receptionist-profile-1-html .sidebar {width:250px;background:#164b49;color:#fff;position:fixed;inset:0 auto 0 0;padding:25px 16px;display:flex;flex-direction:column;z-index:10}
+
+
+body.receptionist-profile-1-html .brand {font-size:21px;font-weight:800;padding:5px 12px 32px;line-height:1.4}
+
+
+body.receptionist-profile-1-html .brand span {color:#69c9b8}
+
+
+body.receptionist-profile-1-html .role-label {font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#a9c9c3;padding:0 12px 12px}
+
+
+body.receptionist-profile-1-html .nav a {display:flex;gap:12px;align-items:center;padding:13px 12px;margin:3px 0;border-radius:8px;color:#dcefeb;font-size:14px}
+
+
+body.receptionist-profile-1-html .nav a:hover,
+body.receptionist-profile-1-html .nav a.active {background:#236b67;color:#fff}
+
+
+body.receptionist-profile-1-html .nav-icon {width:20px;text-align:center;font-size:17px}
+
+
+body.receptionist-profile-1-html .side-footer {margin-top:auto;padding:15px 12px;color:#b8d2cc;font-size:12px;line-height:1.6}
+
+
+body.receptionist-profile-1-html .main {margin-left:250px;width:calc(100% - 250px);padding:28px 34px 45px}
+
+
+body.receptionist-profile-1-html .topbar {display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:28px}
+
+
+body.receptionist-profile-1-html .crumb {font-size:12px;color:#718096;margin-bottom:6px}
+
+
+body.receptionist-profile-1-html h1 {font-size:26px;color:#183b3a}
+
+
+body.receptionist-profile-1-html .user-chip {display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e3eaf1;border-radius:30px;padding:8px 13px;font-size:13px}
+
+
+body.receptionist-profile-1-html .avatar {height:35px;width:35px;border-radius:50%;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-weight:800}
+
+
+body.receptionist-profile-1-html .muted {font-size:12px;color:#718096}
+
+
+body.receptionist-profile-1-html .cards {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:23px}
+
+
+body.receptionist-profile-1-html .stat,
+body.receptionist-profile-1-html .panel,
+body.receptionist-profile-1-html .form-card,
+body.receptionist-profile-1-html .doctor-card,
+body.receptionist-profile-1-html .profile-card {background:#fff;border:1px solid #e4ebf2;border-radius:12px;box-shadow:0 5px 18px rgba(25,55,88,.04)}
+
+
+body.receptionist-profile-1-html .stat {padding:19px}
+body.receptionist-profile-1-html .stat-head {display:flex;justify-content:space-between;align-items:center;color:#718096;font-size:13px}
+
+
+body.receptionist-profile-1-html .stat-icon {width:38px;height:38px;border-radius:10px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:18px}
+
+
+body.receptionist-profile-1-html .stat-num {font-size:29px;font-weight:800;margin-top:12px;color:#183b3a}
+body.receptionist-profile-1-html .stat-note {font-size:11px;color:#8795a5;margin-top:4px}
+
+
+body.receptionist-profile-1-html .panel {padding:20px;margin-bottom:20px}
+body.receptionist-profile-1-html .panel-head {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px}
+
+
+body.receptionist-profile-1-html h2 {font-size:17px}
+body.receptionist-profile-1-html .toolbar {display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}
+
+
+body.receptionist-profile-1-html input,
+body.receptionist-profile-1-html select,
+body.receptionist-profile-1-html textarea {font:inherit;font-size:13px;color:#183b3a;border:1px solid #d9e3ed;border-radius:7px;padding:11px 12px;background:#fff;outline:none;width:100%}
+
+
+body.receptionist-profile-1-html input:focus,
+body.receptionist-profile-1-html select:focus,
+body.receptionist-profile-1-html textarea:focus {border-color:#0f8b8d;box-shadow:0 0 0 3px #0f8b8d1a}
+
+
+body.receptionist-profile-1-html .search {flex:1;min-width:210px}
+body.receptionist-profile-1-html .filter {max-width:180px}
+
+
+body.receptionist-profile-1-html .btn {display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:7px;padding:10px 14px;font-size:12px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-profile-1-html .primary {background:#0f8b8d;color:#fff}
+body.receptionist-profile-1-html .light {background:#e1f3ef;color:#0b7374}
+body.receptionist-profile-1-html .danger {background:#fff0f0;color:#c43c3c}
+body.receptionist-profile-1-html .success {background:#e7f7ee;color:#168653}
+
+
+body.receptionist-profile-1-html table {width:100%;border-collapse:collapse;min-width:660px}
+body.receptionist-profile-1-html th {text-align:left;padding:12px 10px;border-bottom:1px solid #e5ebf2;color:#8492a1;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+
+
+body.receptionist-profile-1-html td {padding:14px 10px;border-bottom:1px solid #edf1f5;font-size:12px}
+body.receptionist-profile-1-html tbody tr:last-child td {border-bottom:0}
+
+
+body.receptionist-profile-1-html .table-wrap {overflow-x:auto}
+body.receptionist-profile-1-html .person {font-weight:700}
+body.receptionist-profile-1-html .sub {display:block;color:#8795a5;font-size:11px;margin-top:4px}
+
+
+body.receptionist-profile-1-html .status {display:inline-block;padding:5px 9px;border-radius:20px;font-size:10px;font-weight:700}
+
+
+body.receptionist-profile-1-html .Confirmed,
+body.receptionist-profile-1-html .Received,
+body.receptionist-profile-1-html .Available {background:#e7f7ee;color:#168653}
+body.receptionist-profile-1-html .Pending {background:#fff4df;color:#a66a10}
+body.receptionist-profile-1-html .Cancelled {background:#ffeded;color:#c43d3d}
+body.receptionist-profile-1-html .Completed {background:#eaf1ff;color:#3569b2}
+body.receptionist-profile-1-html .Unavailable {background:#f0f1f3;color:#6e7782}
+
+
+body.receptionist-profile-1-html .actions {display:flex;gap:6px;flex-wrap:wrap}
+body.receptionist-profile-1-html .small {border:0;border-radius:6px;padding:6px 8px;font-size:10px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-profile-1-html .form-card {padding:22px;max-width:880px}
+body.receptionist-profile-1-html .form-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:19px}
+
+
+body.receptionist-profile-1-html .field label {display:block;font-size:12px;font-weight:700;margin-bottom:7px;color:#304b65}
+body.receptionist-profile-1-html .field.full {grid-column:1/-1}
+
+
+body.receptionist-profile-1-html .form-actions {display:flex;gap:9px;margin-top:20px}
+body.receptionist-profile-1-html .notice {padding:12px 14px;border-radius:8px;background:#eaf6f3;color:#315f83;font-size:12px;margin-top:15px}
+
+
+body.receptionist-profile-1-html .doctor-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.receptionist-profile-1-html .doctor-card {padding:19px}
+body.receptionist-profile-1-html .doctor-icon {height:48px;width:48px;border-radius:12px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:22px;margin-bottom:13px}
+
+
+body.receptionist-profile-1-html .doctor-card h3 {font-size:15px;margin-bottom:5px}
+body.receptionist-profile-1-html .doctor-card p {font-size:12px;color:#718096;margin-bottom:12px}
+body.receptionist-profile-1-html .fee {font-size:15px;font-weight:800;margin:12px 0}
+
+
+body.receptionist-profile-1-html .profile-card {padding:24px;max-width:680px}
+body.receptionist-profile-1-html .profile-head {display:flex;align-items:center;gap:14px;margin-bottom:20px}
+body.receptionist-profile-1-html .profile-avatar {width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:#e1f3ef;color:#0f8b8d;font-size:24px;font-weight:800}
+
+
+body.receptionist-profile-1-html .empty {text-align:center;color:#8795a5;padding:25px}
+body.receptionist-profile-1-html .quick-actions {display:flex;gap:10px;flex-wrap:wrap}
+
+
+@media (max-width:1050px) {
+body.receptionist-profile-1-html .cards {grid-template-columns:repeat(2,1fr)}
+body.receptionist-profile-1-html .doctor-grid {grid-template-columns:repeat(2,1fr)}
+}
+
+
+@media (max-width:700px) {
+body.receptionist-profile-1-html .sidebar {width:70px;padding:18px 8px}
+body.receptionist-profile-1-html .brand {font-size:0;padding:8px 10px 28px}
+body.receptionist-profile-1-html .brand:after {content:"OD";font-size:19px}
+body.receptionist-profile-1-html .role-label,
+body.receptionist-profile-1-html .nav-text,
+body.receptionist-profile-1-html .side-footer {display:none}
+body.receptionist-profile-1-html .nav a {justify-content:center;padding:13px 4px}
+body.receptionist-profile-1-html .main {margin-left:70px;width:calc(100% - 70px);padding:20px 13px}
+body.receptionist-profile-1-html .cards {gap:9px}
+body.receptionist-profile-1-html .stat {padding:12px}
+body.receptionist-profile-1-html .stat-num {font-size:23px}
+body.receptionist-profile-1-html h1 {font-size:21px}
+body.receptionist-profile-1-html .user-chip {font-size:0}
+body.receptionist-profile-1-html .form-grid {grid-template-columns:1fr}
+body.receptionist-profile-1-html .field.full {grid-column:auto}
+body.receptionist-profile-1-html .doctor-grid {grid-template-columns:1fr}
+body.receptionist-profile-1-html .panel {padding:14px}
+}
+
+
+  
+body.receptionist-profile-1-html .queue-ready {background:#e7f7ee;color:#168653}
+body.receptionist-profile-1-html .queue-wait {background:#fff4df;color:#a66a10}
+body.receptionist-profile-1-html .receipt {max-width:720px;padding:24px;border:1px dashed #9bb8b2;margin-top:18px;background:#fff}
+body.receptionist-profile-1-html .receipt h2 {text-align:center;margin-bottom:8px}
+body.receptionist-profile-1-html .receipt p {font-size:13px;line-height:1.8}
+body.receptionist-profile-1-html .inline-form {display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+body.receptionist-profile-1-html .inline-form input,
+body.receptionist-profile-1-html .inline-form select {max-width:180px}
+body.receptionist-profile-1-html .doctor-section {margin:18px 0}
+body.receptionist-profile-1-html .doctor-section h3 {font-size:15px;margin-bottom:10px;color:#164b49}
+
+
+
+/* Styles from sign up(2).html */
+
+        
+body.sign-up-2-html * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        
+body.sign-up-2-html {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f8f7;
+            color: #183b3a;
+        }
+
+
+        
+/* Main Container */
+
+
+        
+body.sign-up-2-html .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 35px 15px;
+        }
+
+
+        
+body.sign-up-2-html .signup-card {
+            width: 100%;
+            max-width: 550px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 13px;
+            box-shadow: 0 8px 30px rgba(25, 55, 88, 0.08);
+        }
+
+
+        
+body.sign-up-2-html .back-link {
+            display: inline-block;
+            color: #0f8b8d;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+
+        
+body.sign-up-2-html h1 {
+            font-size: 30px;
+            color: #183b3a;
+            margin-bottom: 10px;
+        }
+
+
+        
+body.sign-up-2-html .subtitle {
+            color: #718096;
+            font-size: 14px;
+            margin-bottom: 28px;
+            line-height: 1.6;
+        }
+
+
+        
+/* Form Design */
+
+
+        
+body.sign-up-2-html .form-group {
+            margin-bottom: 19px;
+        }
+
+
+        
+body.sign-up-2-html .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 9px;
+            color: #304b65;
+        }
+
+
+        
+body.sign-up-2-html .form-group input,
+body.sign-up-2-html .form-group select,
+body.sign-up-2-html .form-group textarea {
+            width: 100%;
+            border: 1px solid #d9e3ed;
+            border-radius: 7px;
+            padding: 13px;
+            font-size: 14px;
+            outline: none;
+            font-family: inherit;
+            color: #183b3a;
+            background: #ffffff;
+        }
+
+
+        
+body.sign-up-2-html .form-group input,
+body.sign-up-2-html .form-group select {
+            height: 48px;
+        }
+
+
+        
+body.sign-up-2-html .form-group textarea {
+            min-height: 85px;
+            resize: vertical;
+        }
+
+
+        
+body.sign-up-2-html .form-group input:focus,
+body.sign-up-2-html .form-group select:focus,
+body.sign-up-2-html .form-group textarea:focus {
+            border-color: #0f8b8d;
+            box-shadow: 0 0 0 3px rgba(23, 109, 176, 0.1);
+        }
+
+
+        
+body.sign-up-2-html .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+
+        
+body.sign-up-2-html .form-row .form-group {
+            flex: 1;
+            min-width: 0;
+        }
+
+
+        
+/* Sign Up Button */
+
+
+        
+body.sign-up-2-html .signup-btn {
+            width: 100%;
+            height: 49px;
+            background: #0f8b8d;
+            color: #ffffff;
+            border: none;
+            border-radius: 7px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+
+        
+body.sign-up-2-html .signup-btn:hover {
+            background: #0b7374;
+        }
+
+
+        
+body.sign-up-2-html .message {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+
+
+        
+body.sign-up-2-html .login-link {
+            text-align: center;
+            color: #718096;
+            font-size: 14px;
+            margin-top: 24px;
+        }
+
+
+        
+body.sign-up-2-html .login-link a {
+            color: #0f8b8d;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+
+        
+/* Success Popup */
+
+
+        
+body.sign-up-2-html .success-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(20, 40, 60, 0.55);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            z-index: 9999;
+        }
+
+
+        
+body.sign-up-2-html .success-box {
+            width: 100%;
+            max-width: 400px;
+            background: #ffffff;
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+            animation: popup 0.3s ease;
+        }
+
+
+        
+body.sign-up-2-html .success-icon {
+            width: 75px;
+            height: 75px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #e5f8ec;
+            color: #16a34a;
+            font-size: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        
+body.sign-up-2-html .success-box h2 {
+            color: #183b3a;
+            margin-bottom: 12px;
+            font-size: 23px;
+        }
+
+
+        
+body.sign-up-2-html .success-box p {
+            color: #718096;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+
+        
+body.sign-up-2-html .success-box button {
+            background: #0f8b8d;
+            color: white;
+            border: none;
+            padding: 13px 22px;
+            border-radius: 7px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+
+        
+body.sign-up-2-html .success-box button:hover {
+            background: #0b7374;
+        }
+
+
+        
+@keyframes popup {
+
+            
+body.sign-up-2-html from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+
+            
+body.sign-up-2-html to {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+        
+}
+
+
+        
+/* Responsive Design */
+
+
+        
+@media (max-width: 520px) {
+
+            
+body.sign-up-2-html .signup-card {
+                padding: 28px 22px;
+            }
+
+
+            
+body.sign-up-2-html h1 {
+                font-size: 26px;
+            }
+
+
+            
+body.sign-up-2-html .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+
+        
+}
+
+
+    
+
+/* Styles from receptionist panel(1).html */
+
+
+body.receptionist-panel-1-html * {margin:0;padding:0;box-sizing:border-box}
+
+
+body.receptionist-panel-1-html {font-family:Arial,Helvetica,sans-serif;background:#f2f8f7;color:#183b3a}
+
+
+body.receptionist-panel-1-html a {text-decoration:none;color:inherit}
+
+
+body.receptionist-panel-1-html .layout {display:flex;min-height:100vh}
+
+
+body.receptionist-panel-1-html .sidebar {width:250px;background:#164b49;color:#fff;position:fixed;inset:0 auto 0 0;padding:25px 16px;display:flex;flex-direction:column;z-index:10}
+
+
+body.receptionist-panel-1-html .brand {font-size:21px;font-weight:800;padding:5px 12px 32px;line-height:1.4}
+
+
+body.receptionist-panel-1-html .brand span {color:#69c9b8}
+
+
+body.receptionist-panel-1-html .role-label {font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#a9c9c3;padding:0 12px 12px}
+
+
+body.receptionist-panel-1-html .nav a {display:flex;gap:12px;align-items:center;padding:13px 12px;margin:3px 0;border-radius:8px;color:#dcefeb;font-size:14px}
+
+
+body.receptionist-panel-1-html .nav a:hover,
+body.receptionist-panel-1-html .nav a.active {background:#236b67;color:#fff}
+
+
+body.receptionist-panel-1-html .nav-icon {width:20px;text-align:center;font-size:17px}
+
+
+body.receptionist-panel-1-html .side-footer {margin-top:auto;padding:15px 12px;color:#b8d2cc;font-size:12px;line-height:1.6}
+
+
+body.receptionist-panel-1-html .main {margin-left:250px;width:calc(100% - 250px);padding:28px 34px 45px}
+
+
+body.receptionist-panel-1-html .topbar {display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:28px}
+
+
+body.receptionist-panel-1-html .crumb {font-size:12px;color:#718096;margin-bottom:6px}
+
+
+body.receptionist-panel-1-html h1 {font-size:26px;color:#183b3a}
+
+
+body.receptionist-panel-1-html .user-chip {display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e3eaf1;border-radius:30px;padding:8px 13px;font-size:13px}
+
+
+body.receptionist-panel-1-html .avatar {height:35px;width:35px;border-radius:50%;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-weight:800}
+
+
+body.receptionist-panel-1-html .muted {font-size:12px;color:#718096}
+
+
+body.receptionist-panel-1-html .cards {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:23px}
+
+
+body.receptionist-panel-1-html .stat,
+body.receptionist-panel-1-html .panel,
+body.receptionist-panel-1-html .form-card,
+body.receptionist-panel-1-html .doctor-card,
+body.receptionist-panel-1-html .profile-card {background:#fff;border:1px solid #e4ebf2;border-radius:12px;box-shadow:0 5px 18px rgba(25,55,88,.04)}
+
+
+body.receptionist-panel-1-html .stat {padding:19px}
+body.receptionist-panel-1-html .stat-head {display:flex;justify-content:space-between;align-items:center;color:#718096;font-size:13px}
+
+
+body.receptionist-panel-1-html .stat-icon {width:38px;height:38px;border-radius:10px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:18px}
+
+
+body.receptionist-panel-1-html .stat-num {font-size:29px;font-weight:800;margin-top:12px;color:#183b3a}
+body.receptionist-panel-1-html .stat-note {font-size:11px;color:#8795a5;margin-top:4px}
+
+
+body.receptionist-panel-1-html .panel {padding:20px;margin-bottom:20px}
+body.receptionist-panel-1-html .panel-head {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px}
+
+
+body.receptionist-panel-1-html h2 {font-size:17px}
+body.receptionist-panel-1-html .toolbar {display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}
+
+
+body.receptionist-panel-1-html input,
+body.receptionist-panel-1-html select,
+body.receptionist-panel-1-html textarea {font:inherit;font-size:13px;color:#183b3a;border:1px solid #d9e3ed;border-radius:7px;padding:11px 12px;background:#fff;outline:none;width:100%}
+
+
+body.receptionist-panel-1-html input:focus,
+body.receptionist-panel-1-html select:focus,
+body.receptionist-panel-1-html textarea:focus {border-color:#0f8b8d;box-shadow:0 0 0 3px #0f8b8d1a}
+
+
+body.receptionist-panel-1-html .search {flex:1;min-width:210px}
+body.receptionist-panel-1-html .filter {max-width:180px}
+
+
+body.receptionist-panel-1-html .btn {display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:7px;padding:10px 14px;font-size:12px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-panel-1-html .primary {background:#0f8b8d;color:#fff}
+body.receptionist-panel-1-html .light {background:#e1f3ef;color:#0b7374}
+body.receptionist-panel-1-html .danger {background:#fff0f0;color:#c43c3c}
+body.receptionist-panel-1-html .success {background:#e7f7ee;color:#168653}
+
+
+body.receptionist-panel-1-html table {width:100%;border-collapse:collapse;min-width:660px}
+body.receptionist-panel-1-html th {text-align:left;padding:12px 10px;border-bottom:1px solid #e5ebf2;color:#8492a1;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+
+
+body.receptionist-panel-1-html td {padding:14px 10px;border-bottom:1px solid #edf1f5;font-size:12px}
+body.receptionist-panel-1-html tbody tr:last-child td {border-bottom:0}
+
+
+body.receptionist-panel-1-html .table-wrap {overflow-x:auto}
+body.receptionist-panel-1-html .person {font-weight:700}
+body.receptionist-panel-1-html .sub {display:block;color:#8795a5;font-size:11px;margin-top:4px}
+
+
+body.receptionist-panel-1-html .status {display:inline-block;padding:5px 9px;border-radius:20px;font-size:10px;font-weight:700}
+
+
+body.receptionist-panel-1-html .Confirmed,
+body.receptionist-panel-1-html .Received,
+body.receptionist-panel-1-html .Available {background:#e7f7ee;color:#168653}
+body.receptionist-panel-1-html .Pending {background:#fff4df;color:#a66a10}
+body.receptionist-panel-1-html .Cancelled {background:#ffeded;color:#c43d3d}
+body.receptionist-panel-1-html .Completed {background:#eaf1ff;color:#3569b2}
+body.receptionist-panel-1-html .Unavailable {background:#f0f1f3;color:#6e7782}
+
+
+body.receptionist-panel-1-html .actions {display:flex;gap:6px;flex-wrap:wrap}
+body.receptionist-panel-1-html .small {border:0;border-radius:6px;padding:6px 8px;font-size:10px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-panel-1-html .form-card {padding:22px;max-width:880px}
+body.receptionist-panel-1-html .form-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:19px}
+
+
+body.receptionist-panel-1-html .field label {display:block;font-size:12px;font-weight:700;margin-bottom:7px;color:#304b65}
+body.receptionist-panel-1-html .field.full {grid-column:1/-1}
+
+
+body.receptionist-panel-1-html .form-actions {display:flex;gap:9px;margin-top:20px}
+body.receptionist-panel-1-html .notice {padding:12px 14px;border-radius:8px;background:#eaf6f3;color:#315f83;font-size:12px;margin-top:15px}
+
+
+body.receptionist-panel-1-html .doctor-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.receptionist-panel-1-html .doctor-card {padding:19px}
+body.receptionist-panel-1-html .doctor-icon {height:48px;width:48px;border-radius:12px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:22px;margin-bottom:13px}
+
+
+body.receptionist-panel-1-html .doctor-card h3 {font-size:15px;margin-bottom:5px}
+body.receptionist-panel-1-html .doctor-card p {font-size:12px;color:#718096;margin-bottom:12px}
+body.receptionist-panel-1-html .fee {font-size:15px;font-weight:800;margin:12px 0}
+
+
+body.receptionist-panel-1-html .profile-card {padding:24px;max-width:680px}
+body.receptionist-panel-1-html .profile-head {display:flex;align-items:center;gap:14px;margin-bottom:20px}
+body.receptionist-panel-1-html .profile-avatar {width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:#e1f3ef;color:#0f8b8d;font-size:24px;font-weight:800}
+
+
+body.receptionist-panel-1-html .empty {text-align:center;color:#8795a5;padding:25px}
+body.receptionist-panel-1-html .quick-actions {display:flex;gap:10px;flex-wrap:wrap}
+
+
+@media (max-width:1050px) {
+body.receptionist-panel-1-html .cards {grid-template-columns:repeat(2,1fr)}
+body.receptionist-panel-1-html .doctor-grid {grid-template-columns:repeat(2,1fr)}
+}
+
+
+@media (max-width:700px) {
+body.receptionist-panel-1-html .sidebar {width:70px;padding:18px 8px}
+body.receptionist-panel-1-html .brand {font-size:0;padding:8px 10px 28px}
+body.receptionist-panel-1-html .brand:after {content:"OD";font-size:19px}
+body.receptionist-panel-1-html .role-label,
+body.receptionist-panel-1-html .nav-text,
+body.receptionist-panel-1-html .side-footer {display:none}
+body.receptionist-panel-1-html .nav a {justify-content:center;padding:13px 4px}
+body.receptionist-panel-1-html .main {margin-left:70px;width:calc(100% - 70px);padding:20px 13px}
+body.receptionist-panel-1-html .cards {gap:9px}
+body.receptionist-panel-1-html .stat {padding:12px}
+body.receptionist-panel-1-html .stat-num {font-size:23px}
+body.receptionist-panel-1-html h1 {font-size:21px}
+body.receptionist-panel-1-html .user-chip {font-size:0}
+body.receptionist-panel-1-html .form-grid {grid-template-columns:1fr}
+body.receptionist-panel-1-html .field.full {grid-column:auto}
+body.receptionist-panel-1-html .doctor-grid {grid-template-columns:1fr}
+body.receptionist-panel-1-html .panel {padding:14px}
+}
+
+
+  
+body.receptionist-panel-1-html .queue-ready {background:#e7f7ee;color:#168653}
+body.receptionist-panel-1-html .queue-wait {background:#fff4df;color:#a66a10}
+body.receptionist-panel-1-html .receipt {max-width:720px;padding:24px;border:1px dashed #9bb8b2;margin-top:18px;background:#fff}
+body.receptionist-panel-1-html .receipt h2 {text-align:center;margin-bottom:8px}
+body.receptionist-panel-1-html .receipt p {font-size:13px;line-height:1.8}
+body.receptionist-panel-1-html .inline-form {display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+body.receptionist-panel-1-html .inline-form input,
+body.receptionist-panel-1-html .inline-form select {max-width:180px}
+body.receptionist-panel-1-html .doctor-section {margin:18px 0}
+body.receptionist-panel-1-html .doctor-section h3 {font-size:15px;margin-bottom:10px;color:#164b49}
+
+
+
+/* Styles from receptionist payments(1).html */
+
+
+body.receptionist-payments-1-html * {margin:0;padding:0;box-sizing:border-box}
+
+
+body.receptionist-payments-1-html {font-family:Arial,Helvetica,sans-serif;background:#f2f8f7;color:#183b3a}
+
+
+body.receptionist-payments-1-html a {text-decoration:none;color:inherit}
+
+
+body.receptionist-payments-1-html .layout {display:flex;min-height:100vh}
+
+
+body.receptionist-payments-1-html .sidebar {width:250px;background:#164b49;color:#fff;position:fixed;inset:0 auto 0 0;padding:25px 16px;display:flex;flex-direction:column;z-index:10}
+
+
+body.receptionist-payments-1-html .brand {font-size:21px;font-weight:800;padding:5px 12px 32px;line-height:1.4}
+
+
+body.receptionist-payments-1-html .brand span {color:#69c9b8}
+
+
+body.receptionist-payments-1-html .role-label {font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#a9c9c3;padding:0 12px 12px}
+
+
+body.receptionist-payments-1-html .nav a {display:flex;gap:12px;align-items:center;padding:13px 12px;margin:3px 0;border-radius:8px;color:#dcefeb;font-size:14px}
+
+
+body.receptionist-payments-1-html .nav a:hover,
+body.receptionist-payments-1-html .nav a.active {background:#236b67;color:#fff}
+
+
+body.receptionist-payments-1-html .nav-icon {width:20px;text-align:center;font-size:17px}
+
+
+body.receptionist-payments-1-html .side-footer {margin-top:auto;padding:15px 12px;color:#b8d2cc;font-size:12px;line-height:1.6}
+
+
+body.receptionist-payments-1-html .main {margin-left:250px;width:calc(100% - 250px);padding:28px 34px 45px}
+
+
+body.receptionist-payments-1-html .topbar {display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:28px}
+
+
+body.receptionist-payments-1-html .crumb {font-size:12px;color:#718096;margin-bottom:6px}
+
+
+body.receptionist-payments-1-html h1 {font-size:26px;color:#183b3a}
+
+
+body.receptionist-payments-1-html .user-chip {display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e3eaf1;border-radius:30px;padding:8px 13px;font-size:13px}
+
+
+body.receptionist-payments-1-html .avatar {height:35px;width:35px;border-radius:50%;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-weight:800}
+
+
+body.receptionist-payments-1-html .muted {font-size:12px;color:#718096}
+
+
+body.receptionist-payments-1-html .cards {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:23px}
+
+
+body.receptionist-payments-1-html .stat,
+body.receptionist-payments-1-html .panel,
+body.receptionist-payments-1-html .form-card,
+body.receptionist-payments-1-html .doctor-card,
+body.receptionist-payments-1-html .profile-card {background:#fff;border:1px solid #e4ebf2;border-radius:12px;box-shadow:0 5px 18px rgba(25,55,88,.04)}
+
+
+body.receptionist-payments-1-html .stat {padding:19px}
+body.receptionist-payments-1-html .stat-head {display:flex;justify-content:space-between;align-items:center;color:#718096;font-size:13px}
+
+
+body.receptionist-payments-1-html .stat-icon {width:38px;height:38px;border-radius:10px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:18px}
+
+
+body.receptionist-payments-1-html .stat-num {font-size:29px;font-weight:800;margin-top:12px;color:#183b3a}
+body.receptionist-payments-1-html .stat-note {font-size:11px;color:#8795a5;margin-top:4px}
+
+
+body.receptionist-payments-1-html .panel {padding:20px;margin-bottom:20px}
+body.receptionist-payments-1-html .panel-head {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px}
+
+
+body.receptionist-payments-1-html h2 {font-size:17px}
+body.receptionist-payments-1-html .toolbar {display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}
+
+
+body.receptionist-payments-1-html input,
+body.receptionist-payments-1-html select,
+body.receptionist-payments-1-html textarea {font:inherit;font-size:13px;color:#183b3a;border:1px solid #d9e3ed;border-radius:7px;padding:11px 12px;background:#fff;outline:none;width:100%}
+
+
+body.receptionist-payments-1-html input:focus,
+body.receptionist-payments-1-html select:focus,
+body.receptionist-payments-1-html textarea:focus {border-color:#0f8b8d;box-shadow:0 0 0 3px #0f8b8d1a}
+
+
+body.receptionist-payments-1-html .search {flex:1;min-width:210px}
+body.receptionist-payments-1-html .filter {max-width:180px}
+
+
+body.receptionist-payments-1-html .btn {display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:7px;padding:10px 14px;font-size:12px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-payments-1-html .primary {background:#0f8b8d;color:#fff}
+body.receptionist-payments-1-html .light {background:#e1f3ef;color:#0b7374}
+body.receptionist-payments-1-html .danger {background:#fff0f0;color:#c43c3c}
+body.receptionist-payments-1-html .success {background:#e7f7ee;color:#168653}
+
+
+body.receptionist-payments-1-html table {width:100%;border-collapse:collapse;min-width:660px}
+body.receptionist-payments-1-html th {text-align:left;padding:12px 10px;border-bottom:1px solid #e5ebf2;color:#8492a1;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+
+
+body.receptionist-payments-1-html td {padding:14px 10px;border-bottom:1px solid #edf1f5;font-size:12px}
+body.receptionist-payments-1-html tbody tr:last-child td {border-bottom:0}
+
+
+body.receptionist-payments-1-html .table-wrap {overflow-x:auto}
+body.receptionist-payments-1-html .person {font-weight:700}
+body.receptionist-payments-1-html .sub {display:block;color:#8795a5;font-size:11px;margin-top:4px}
+
+
+body.receptionist-payments-1-html .status {display:inline-block;padding:5px 9px;border-radius:20px;font-size:10px;font-weight:700}
+
+
+body.receptionist-payments-1-html .Confirmed,
+body.receptionist-payments-1-html .Received,
+body.receptionist-payments-1-html .Available {background:#e7f7ee;color:#168653}
+body.receptionist-payments-1-html .Pending {background:#fff4df;color:#a66a10}
+body.receptionist-payments-1-html .Cancelled {background:#ffeded;color:#c43d3d}
+body.receptionist-payments-1-html .Completed {background:#eaf1ff;color:#3569b2}
+body.receptionist-payments-1-html .Unavailable {background:#f0f1f3;color:#6e7782}
+
+
+body.receptionist-payments-1-html .actions {display:flex;gap:6px;flex-wrap:wrap}
+body.receptionist-payments-1-html .small {border:0;border-radius:6px;padding:6px 8px;font-size:10px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-payments-1-html .form-card {padding:22px;max-width:880px}
+body.receptionist-payments-1-html .form-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:19px}
+
+
+body.receptionist-payments-1-html .field label {display:block;font-size:12px;font-weight:700;margin-bottom:7px;color:#304b65}
+body.receptionist-payments-1-html .field.full {grid-column:1/-1}
+
+
+body.receptionist-payments-1-html .form-actions {display:flex;gap:9px;margin-top:20px}
+body.receptionist-payments-1-html .notice {padding:12px 14px;border-radius:8px;background:#eaf6f3;color:#315f83;font-size:12px;margin-top:15px}
+
+
+body.receptionist-payments-1-html .doctor-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.receptionist-payments-1-html .doctor-card {padding:19px}
+body.receptionist-payments-1-html .doctor-icon {height:48px;width:48px;border-radius:12px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:22px;margin-bottom:13px}
+
+
+body.receptionist-payments-1-html .doctor-card h3 {font-size:15px;margin-bottom:5px}
+body.receptionist-payments-1-html .doctor-card p {font-size:12px;color:#718096;margin-bottom:12px}
+body.receptionist-payments-1-html .fee {font-size:15px;font-weight:800;margin:12px 0}
+
+
+body.receptionist-payments-1-html .profile-card {padding:24px;max-width:680px}
+body.receptionist-payments-1-html .profile-head {display:flex;align-items:center;gap:14px;margin-bottom:20px}
+body.receptionist-payments-1-html .profile-avatar {width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:#e1f3ef;color:#0f8b8d;font-size:24px;font-weight:800}
+
+
+body.receptionist-payments-1-html .empty {text-align:center;color:#8795a5;padding:25px}
+body.receptionist-payments-1-html .quick-actions {display:flex;gap:10px;flex-wrap:wrap}
+
+
+@media (max-width:1050px) {
+body.receptionist-payments-1-html .cards {grid-template-columns:repeat(2,1fr)}
+body.receptionist-payments-1-html .doctor-grid {grid-template-columns:repeat(2,1fr)}
+}
+
+
+@media (max-width:700px) {
+body.receptionist-payments-1-html .sidebar {width:70px;padding:18px 8px}
+body.receptionist-payments-1-html .brand {font-size:0;padding:8px 10px 28px}
+body.receptionist-payments-1-html .brand:after {content:"OD";font-size:19px}
+body.receptionist-payments-1-html .role-label,
+body.receptionist-payments-1-html .nav-text,
+body.receptionist-payments-1-html .side-footer {display:none}
+body.receptionist-payments-1-html .nav a {justify-content:center;padding:13px 4px}
+body.receptionist-payments-1-html .main {margin-left:70px;width:calc(100% - 70px);padding:20px 13px}
+body.receptionist-payments-1-html .cards {gap:9px}
+body.receptionist-payments-1-html .stat {padding:12px}
+body.receptionist-payments-1-html .stat-num {font-size:23px}
+body.receptionist-payments-1-html h1 {font-size:21px}
+body.receptionist-payments-1-html .user-chip {font-size:0}
+body.receptionist-payments-1-html .form-grid {grid-template-columns:1fr}
+body.receptionist-payments-1-html .field.full {grid-column:auto}
+body.receptionist-payments-1-html .doctor-grid {grid-template-columns:1fr}
+body.receptionist-payments-1-html .panel {padding:14px}
+}
+
+
+  
+body.receptionist-payments-1-html .queue-ready {background:#e7f7ee;color:#168653}
+body.receptionist-payments-1-html .queue-wait {background:#fff4df;color:#a66a10}
+body.receptionist-payments-1-html .receipt {max-width:720px;padding:24px;border:1px dashed #9bb8b2;margin-top:18px;background:#fff}
+body.receptionist-payments-1-html .receipt h2 {text-align:center;margin-bottom:8px}
+body.receptionist-payments-1-html .receipt p {font-size:13px;line-height:1.8}
+body.receptionist-payments-1-html .inline-form {display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+body.receptionist-payments-1-html .inline-form input,
+body.receptionist-payments-1-html .inline-form select {max-width:180px}
+body.receptionist-payments-1-html .doctor-section {margin:18px 0}
+body.receptionist-payments-1-html .doctor-section h3 {font-size:15px;margin-bottom:10px;color:#164b49}
+
+
+
+/* Styles from receptionist doctors(2).html */
+
+    
+body.receptionist-doctors-2-html * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+
+    
+body.receptionist-doctors-2-html {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f8f7;
+      color: #183b3a
+    }
+
+
+    
+body.receptionist-doctors-2-html a {
+      text-decoration: none;
+      color: inherit
+    }
+
+
+    
+body.receptionist-doctors-2-html .layout {
+      display: flex;
+      min-height: 100vh
+    }
+
+
+    
+body.receptionist-doctors-2-html .sidebar {
+      width: 250px;
+      background: #164b49;
+      color: #fff;
+      position: fixed;
+      inset: 0 auto 0 0;
+      padding: 25px 16px;
+      display: flex;
+      flex-direction: column;
+      z-index: 10
+    }
+
+
+    
+body.receptionist-doctors-2-html .brand {
+      font-size: 21px;
+      font-weight: 800;
+      padding: 5px 12px 32px;
+      line-height: 1.4
+    }
+
+
+    
+body.receptionist-doctors-2-html .brand span {
+      color: #69c9b8
+    }
+
+
+    
+body.receptionist-doctors-2-html .role-label {
+      font-size: 11px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #a9c9c3;
+      padding: 0 12px 12px
+    }
+
+
+    
+body.receptionist-doctors-2-html .nav a {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      padding: 13px 12px;
+      margin: 3px 0;
+      border-radius: 8px;
+      color: #dcefeb;
+      font-size: 14px
+    }
+
+
+    
+body.receptionist-doctors-2-html .nav a:hover,
+body.receptionist-doctors-2-html .nav a.active {
+      background: #236b67;
+      color: #fff
+    }
+
+
+    
+body.receptionist-doctors-2-html .nav-icon {
+      width: 20px;
+      text-align: center;
+      font-size: 17px
+    }
+
+
+    
+body.receptionist-doctors-2-html .side-footer {
+      margin-top: auto;
+      padding: 15px 12px;
+      color: #b8d2cc;
+      font-size: 12px;
+      line-height: 1.6
+    }
+
+
+    
+body.receptionist-doctors-2-html .main {
+      margin-left: 250px;
+      width: calc(100% - 250px);
+      padding: 28px 34px 45px
+    }
+
+
+    
+body.receptionist-doctors-2-html .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 28px
+    }
+
+
+    
+body.receptionist-doctors-2-html .crumb {
+      font-size: 12px;
+      color: #718096;
+      margin-bottom: 6px
+    }
+
+
+    
+body.receptionist-doctors-2-html h1 {
+      font-size: 26px;
+      color: #183b3a
+    }
+
+
+    
+body.receptionist-doctors-2-html .user-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      border: 1px solid #e3eaf1;
+      border-radius: 30px;
+      padding: 8px 13px;
+      font-size: 13px
+    }
+
+
+    
+body.receptionist-doctors-2-html .avatar {
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      background: #e1f3ef;
+      color: #0f8b8d;
+      display: grid;
+      place-items: center;
+      font-weight: 800
+    }
+
+
+    
+body.receptionist-doctors-2-html .muted {
+      font-size: 12px;
+      color: #718096
+    }
+
+
+    
+body.receptionist-doctors-2-html .cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 23px
+    }
+
+
+    
+body.receptionist-doctors-2-html .stat,
+body.receptionist-doctors-2-html .panel,
+body.receptionist-doctors-2-html .form-card,
+body.receptionist-doctors-2-html .doctor-card,
+body.receptionist-doctors-2-html .profile-card {
+      background: #fff;
+      border: 1px solid #e4ebf2;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(25, 55, 88, .04)
+    }
+
+
+    
+body.receptionist-doctors-2-html .stat {
+      padding: 19px
+    }
+
+
+    
+body.receptionist-doctors-2-html .stat-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #718096;
+      font-size: 13px
+    }
+
+
+    
+body.receptionist-doctors-2-html .stat-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #e1f3ef;
+      color: #0f8b8d;
+      display: grid;
+      place-items: center;
+      font-size: 18px
+    }
+
+
+    
+body.receptionist-doctors-2-html .stat-num {
+      font-size: 29px;
+      font-weight: 800;
+      margin-top: 12px;
+      color: #183b3a
+    }
+
+
+    
+body.receptionist-doctors-2-html .stat-note {
+      font-size: 11px;
+      color: #8795a5;
+      margin-top: 4px
+    }
+
+
+    
+body.receptionist-doctors-2-html .panel {
+      padding: 20px;
+      margin-bottom: 20px
+    }
+
+
+    
+body.receptionist-doctors-2-html .panel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 17px
+    }
+
+
+    
+body.receptionist-doctors-2-html h2 {
+      font-size: 17px
+    }
+
+
+    
+body.receptionist-doctors-2-html .toolbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 15px
+    }
+
+
+    
+body.receptionist-doctors-2-html input,
+body.receptionist-doctors-2-html select,
+body.receptionist-doctors-2-html textarea {
+      font: inherit;
+      font-size: 13px;
+      color: #183b3a;
+      border: 1px solid #d9e3ed;
+      border-radius: 7px;
+      padding: 11px 12px;
+      background: #fff;
+      outline: none;
+      width: 100%
+    }
+
+
+    
+body.receptionist-doctors-2-html input:focus,
+body.receptionist-doctors-2-html select:focus,
+body.receptionist-doctors-2-html textarea:focus {
+      border-color: #0f8b8d;
+      box-shadow: 0 0 0 3px #0f8b8d1a
+    }
+
+
+    
+body.receptionist-doctors-2-html .search {
+      flex: 1;
+      min-width: 210px
+    }
+
+
+    
+body.receptionist-doctors-2-html .filter {
+      max-width: 180px
+    }
+
+
+    
+body.receptionist-doctors-2-html .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      border-radius: 7px;
+      padding: 10px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer
+    }
+
+
+    
+body.receptionist-doctors-2-html .primary {
+      background: #0f8b8d;
+      color: #fff
+    }
+
+
+    
+body.receptionist-doctors-2-html .light {
+      background: #e1f3ef;
+      color: #0b7374
+    }
+
+
+    
+body.receptionist-doctors-2-html .danger {
+      background: #fff0f0;
+      color: #c43c3c
+    }
+
+
+    
+body.receptionist-doctors-2-html .success {
+      background: #e7f7ee;
+      color: #168653
+    }
+
+
+    
+body.receptionist-doctors-2-html table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 660px
+    }
+
+
+    
+body.receptionist-doctors-2-html th {
+      text-align: left;
+      padding: 12px 10px;
+      border-bottom: 1px solid #e5ebf2;
+      color: #8492a1;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .4px
+    }
+
+
+    
+body.receptionist-doctors-2-html td {
+      padding: 14px 10px;
+      border-bottom: 1px solid #edf1f5;
+      font-size: 12px
+    }
+
+
+    
+body.receptionist-doctors-2-html tbody tr:last-child td {
+      border-bottom: 0
+    }
+
+
+    
+body.receptionist-doctors-2-html .table-wrap {
+      overflow-x: auto
+    }
+
+
+    
+body.receptionist-doctors-2-html .person {
+      font-weight: 700
+    }
+
+
+    
+body.receptionist-doctors-2-html .sub {
+      display: block;
+      color: #8795a5;
+      font-size: 11px;
+      margin-top: 4px
+    }
+
+
+    
+body.receptionist-doctors-2-html .status {
+      display: inline-block;
+      padding: 5px 9px;
+      border-radius: 20px;
+      font-size: 10px;
+      font-weight: 700
+    }
+
+
+    
+body.receptionist-doctors-2-html .Confirmed,
+body.receptionist-doctors-2-html .Received,
+body.receptionist-doctors-2-html .Available {
+      background: #e7f7ee;
+      color: #168653
+    }
+
+
+    
+body.receptionist-doctors-2-html .Pending {
+      background: #fff4df;
+      color: #a66a10
+    }
+
+
+    
+body.receptionist-doctors-2-html .Cancelled {
+      background: #ffeded;
+      color: #c43d3d
+    }
+
+
+    
+body.receptionist-doctors-2-html .Completed {
+      background: #eaf1ff;
+      color: #3569b2
+    }
+
+
+    
+body.receptionist-doctors-2-html .Unavailable {
+      background: #f0f1f3;
+      color: #6e7782
+    }
+
+
+    
+body.receptionist-doctors-2-html .actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap
+    }
+
+
+    
+body.receptionist-doctors-2-html .small {
+      border: 0;
+      border-radius: 6px;
+      padding: 6px 8px;
+      font-size: 10px;
+      font-weight: 700;
+      cursor: pointer
+    }
+
+
+    
+body.receptionist-doctors-2-html .form-card {
+      padding: 22px;
+      max-width: 880px
+    }
+
+
+    
+body.receptionist-doctors-2-html .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 19px
+    }
+
+
+    
+body.receptionist-doctors-2-html .field label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 7px;
+      color: #304b65
+    }
+
+
+    
+body.receptionist-doctors-2-html .field.full {
+      grid-column: 1/-1
+    }
+
+
+    
+body.receptionist-doctors-2-html .form-actions {
+      display: flex;
+      gap: 9px;
+      margin-top: 20px
+    }
+
+
+    
+body.receptionist-doctors-2-html .notice {
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: #eaf6f3;
+      color: #315f83;
+      font-size: 12px;
+      margin-top: 15px
+    }
+
+
+    
+body.receptionist-doctors-2-html .doctor-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px
+    }
+
+
+    
+body.receptionist-doctors-2-html .doctor-card {
+      padding: 19px
+    }
+
+
+    
+body.receptionist-doctors-2-html .doctor-icon {
+      height: 48px;
+      width: 48px;
+      border-radius: 12px;
+      background: #e1f3ef;
+      color: #0f8b8d;
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      margin-bottom: 13px
+    }
+
+
+    
+body.receptionist-doctors-2-html .doctor-card h3 {
+      font-size: 15px;
+      margin-bottom: 5px
+    }
+
+
+    
+body.receptionist-doctors-2-html .doctor-card p {
+      font-size: 12px;
+      color: #718096;
+      margin-bottom: 12px
+    }
+
+
+    
+body.receptionist-doctors-2-html .fee {
+      font-size: 15px;
+      font-weight: 800;
+      margin: 12px 0
+    }
+
+
+    
+body.receptionist-doctors-2-html .profile-card {
+      padding: 24px;
+      max-width: 680px
+    }
+
+
+    
+body.receptionist-doctors-2-html .profile-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px
+    }
+
+
+    
+body.receptionist-doctors-2-html .profile-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #e1f3ef;
+      color: #0f8b8d;
+      font-size: 24px;
+      font-weight: 800
+    }
+
+
+    
+body.receptionist-doctors-2-html .empty {
+      text-align: center;
+      color: #8795a5;
+      padding: 25px
+    }
+
+
+    
+body.receptionist-doctors-2-html .quick-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap
+    }
+
+
+    
+@media (max-width:1050px) {
+
+      
+body.receptionist-doctors-2-html .cards {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+
+      
+body.receptionist-doctors-2-html .doctor-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+    
+}
+
+
+    
+@media (max-width:700px) {
+
+      
+body.receptionist-doctors-2-html .sidebar {
+        width: 70px;
+        padding: 18px 8px
+      }
+
+
+      
+body.receptionist-doctors-2-html .brand {
+        font-size: 0;
+        padding: 8px 10px 28px
+      }
+
+
+      
+body.receptionist-doctors-2-html .brand:after {
+        content: "OD";
+        font-size: 19px
+      }
+
+
+      
+body.receptionist-doctors-2-html .role-label,
+body.receptionist-doctors-2-html .nav-text,
+body.receptionist-doctors-2-html .side-footer {
+        display: none
+      }
+
+
+      
+body.receptionist-doctors-2-html .nav a {
+        justify-content: center;
+        padding: 13px 4px
+      }
+
+
+      
+body.receptionist-doctors-2-html .main {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+        padding: 20px 13px
+      }
+
+
+      
+body.receptionist-doctors-2-html .cards {
+        gap: 9px
+      }
+
+
+      
+body.receptionist-doctors-2-html .stat {
+        padding: 12px
+      }
+
+
+      
+body.receptionist-doctors-2-html .stat-num {
+        font-size: 23px
+      }
+
+
+      
+body.receptionist-doctors-2-html h1 {
+        font-size: 21px
+      }
+
+
+      
+body.receptionist-doctors-2-html .user-chip {
+        font-size: 0
+      }
+
+
+      
+body.receptionist-doctors-2-html .form-grid {
+        grid-template-columns: 1fr
+      }
+
+
+      
+body.receptionist-doctors-2-html .field.full {
+        grid-column: auto
+      }
+
+
+      
+body.receptionist-doctors-2-html .doctor-grid {
+        grid-template-columns: 1fr
+      }
+
+
+      
+body.receptionist-doctors-2-html .panel {
+        padding: 14px
+      }
+
+    
+}
+
+  
+body.receptionist-doctors-2-html .queue-ready {background:#e7f7ee;color:#168653}
+body.receptionist-doctors-2-html .queue-wait {background:#fff4df;color:#a66a10}
+body.receptionist-doctors-2-html .receipt {max-width:720px;padding:24px;border:1px dashed #9bb8b2;margin-top:18px;background:#fff}
+body.receptionist-doctors-2-html .receipt h2 {text-align:center;margin-bottom:8px}
+body.receptionist-doctors-2-html .receipt p {font-size:13px;line-height:1.8}
+body.receptionist-doctors-2-html .inline-form {display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+body.receptionist-doctors-2-html .inline-form input,
+body.receptionist-doctors-2-html .inline-form select {max-width:180px}
+body.receptionist-doctors-2-html .doctor-section {margin:18px 0}
+body.receptionist-doctors-2-html .doctor-section h3 {font-size:15px;margin-bottom:10px;color:#164b49}
+
+
+
+/* Styles from receptionist book appointment(1).html */
+
+
+body.receptionist-book-appointment-1-html * {margin:0;padding:0;box-sizing:border-box}
+
+
+body.receptionist-book-appointment-1-html {font-family:Arial,Helvetica,sans-serif;background:#f2f8f7;color:#183b3a}
+
+
+body.receptionist-book-appointment-1-html a {text-decoration:none;color:inherit}
+
+
+body.receptionist-book-appointment-1-html .layout {display:flex;min-height:100vh}
+
+
+body.receptionist-book-appointment-1-html .sidebar {width:250px;background:#164b49;color:#fff;position:fixed;inset:0 auto 0 0;padding:25px 16px;display:flex;flex-direction:column;z-index:10}
+
+
+body.receptionist-book-appointment-1-html .brand {font-size:21px;font-weight:800;padding:5px 12px 32px;line-height:1.4}
+
+
+body.receptionist-book-appointment-1-html .brand span {color:#69c9b8}
+
+
+body.receptionist-book-appointment-1-html .role-label {font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#a9c9c3;padding:0 12px 12px}
+
+
+body.receptionist-book-appointment-1-html .nav a {display:flex;gap:12px;align-items:center;padding:13px 12px;margin:3px 0;border-radius:8px;color:#dcefeb;font-size:14px}
+
+
+body.receptionist-book-appointment-1-html .nav a:hover,
+body.receptionist-book-appointment-1-html .nav a.active {background:#236b67;color:#fff}
+
+
+body.receptionist-book-appointment-1-html .nav-icon {width:20px;text-align:center;font-size:17px}
+
+
+body.receptionist-book-appointment-1-html .side-footer {margin-top:auto;padding:15px 12px;color:#b8d2cc;font-size:12px;line-height:1.6}
+
+
+body.receptionist-book-appointment-1-html .main {margin-left:250px;width:calc(100% - 250px);padding:28px 34px 45px}
+
+
+body.receptionist-book-appointment-1-html .topbar {display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:28px}
+
+
+body.receptionist-book-appointment-1-html .crumb {font-size:12px;color:#718096;margin-bottom:6px}
+
+
+body.receptionist-book-appointment-1-html h1 {font-size:26px;color:#183b3a}
+
+
+body.receptionist-book-appointment-1-html .user-chip {display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e3eaf1;border-radius:30px;padding:8px 13px;font-size:13px}
+
+
+body.receptionist-book-appointment-1-html .avatar {height:35px;width:35px;border-radius:50%;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-weight:800}
+
+
+body.receptionist-book-appointment-1-html .muted {font-size:12px;color:#718096}
+
+
+body.receptionist-book-appointment-1-html .cards {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:23px}
+
+
+body.receptionist-book-appointment-1-html .stat,
+body.receptionist-book-appointment-1-html .panel,
+body.receptionist-book-appointment-1-html .form-card,
+body.receptionist-book-appointment-1-html .doctor-card,
+body.receptionist-book-appointment-1-html .profile-card {background:#fff;border:1px solid #e4ebf2;border-radius:12px;box-shadow:0 5px 18px rgba(25,55,88,.04)}
+
+
+body.receptionist-book-appointment-1-html .stat {padding:19px}
+body.receptionist-book-appointment-1-html .stat-head {display:flex;justify-content:space-between;align-items:center;color:#718096;font-size:13px}
+
+
+body.receptionist-book-appointment-1-html .stat-icon {width:38px;height:38px;border-radius:10px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:18px}
+
+
+body.receptionist-book-appointment-1-html .stat-num {font-size:29px;font-weight:800;margin-top:12px;color:#183b3a}
+body.receptionist-book-appointment-1-html .stat-note {font-size:11px;color:#8795a5;margin-top:4px}
+
+
+body.receptionist-book-appointment-1-html .panel {padding:20px;margin-bottom:20px}
+body.receptionist-book-appointment-1-html .panel-head {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px}
+
+
+body.receptionist-book-appointment-1-html h2 {font-size:17px}
+body.receptionist-book-appointment-1-html .toolbar {display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}
+
+
+body.receptionist-book-appointment-1-html input,
+body.receptionist-book-appointment-1-html select,
+body.receptionist-book-appointment-1-html textarea {font:inherit;font-size:13px;color:#183b3a;border:1px solid #d9e3ed;border-radius:7px;padding:11px 12px;background:#fff;outline:none;width:100%}
+
+
+body.receptionist-book-appointment-1-html input:focus,
+body.receptionist-book-appointment-1-html select:focus,
+body.receptionist-book-appointment-1-html textarea:focus {border-color:#0f8b8d;box-shadow:0 0 0 3px #0f8b8d1a}
+
+
+body.receptionist-book-appointment-1-html .search {flex:1;min-width:210px}
+body.receptionist-book-appointment-1-html .filter {max-width:180px}
+
+
+body.receptionist-book-appointment-1-html .btn {display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:7px;padding:10px 14px;font-size:12px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-book-appointment-1-html .primary {background:#0f8b8d;color:#fff}
+body.receptionist-book-appointment-1-html .light {background:#e1f3ef;color:#0b7374}
+body.receptionist-book-appointment-1-html .danger {background:#fff0f0;color:#c43c3c}
+body.receptionist-book-appointment-1-html .success {background:#e7f7ee;color:#168653}
+
+
+body.receptionist-book-appointment-1-html table {width:100%;border-collapse:collapse;min-width:660px}
+body.receptionist-book-appointment-1-html th {text-align:left;padding:12px 10px;border-bottom:1px solid #e5ebf2;color:#8492a1;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+
+
+body.receptionist-book-appointment-1-html td {padding:14px 10px;border-bottom:1px solid #edf1f5;font-size:12px}
+body.receptionist-book-appointment-1-html tbody tr:last-child td {border-bottom:0}
+
+
+body.receptionist-book-appointment-1-html .table-wrap {overflow-x:auto}
+body.receptionist-book-appointment-1-html .person {font-weight:700}
+body.receptionist-book-appointment-1-html .sub {display:block;color:#8795a5;font-size:11px;margin-top:4px}
+
+
+body.receptionist-book-appointment-1-html .status {display:inline-block;padding:5px 9px;border-radius:20px;font-size:10px;font-weight:700}
+
+
+body.receptionist-book-appointment-1-html .Confirmed,
+body.receptionist-book-appointment-1-html .Received,
+body.receptionist-book-appointment-1-html .Available {background:#e7f7ee;color:#168653}
+body.receptionist-book-appointment-1-html .Pending {background:#fff4df;color:#a66a10}
+body.receptionist-book-appointment-1-html .Cancelled {background:#ffeded;color:#c43d3d}
+body.receptionist-book-appointment-1-html .Completed {background:#eaf1ff;color:#3569b2}
+body.receptionist-book-appointment-1-html .Unavailable {background:#f0f1f3;color:#6e7782}
+
+
+body.receptionist-book-appointment-1-html .actions {display:flex;gap:6px;flex-wrap:wrap}
+body.receptionist-book-appointment-1-html .small {border:0;border-radius:6px;padding:6px 8px;font-size:10px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-book-appointment-1-html .form-card {padding:22px;max-width:880px}
+body.receptionist-book-appointment-1-html .form-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:19px}
+
+
+body.receptionist-book-appointment-1-html .field label {display:block;font-size:12px;font-weight:700;margin-bottom:7px;color:#304b65}
+body.receptionist-book-appointment-1-html .field.full {grid-column:1/-1}
+
+
+body.receptionist-book-appointment-1-html .form-actions {display:flex;gap:9px;margin-top:20px}
+body.receptionist-book-appointment-1-html .notice {padding:12px 14px;border-radius:8px;background:#eaf6f3;color:#315f83;font-size:12px;margin-top:15px}
+
+
+body.receptionist-book-appointment-1-html .doctor-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.receptionist-book-appointment-1-html .doctor-card {padding:19px}
+body.receptionist-book-appointment-1-html .doctor-icon {height:48px;width:48px;border-radius:12px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:22px;margin-bottom:13px}
+
+
+body.receptionist-book-appointment-1-html .doctor-card h3 {font-size:15px;margin-bottom:5px}
+body.receptionist-book-appointment-1-html .doctor-card p {font-size:12px;color:#718096;margin-bottom:12px}
+body.receptionist-book-appointment-1-html .fee {font-size:15px;font-weight:800;margin:12px 0}
+
+
+body.receptionist-book-appointment-1-html .profile-card {padding:24px;max-width:680px}
+body.receptionist-book-appointment-1-html .profile-head {display:flex;align-items:center;gap:14px;margin-bottom:20px}
+body.receptionist-book-appointment-1-html .profile-avatar {width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:#e1f3ef;color:#0f8b8d;font-size:24px;font-weight:800}
+
+
+body.receptionist-book-appointment-1-html .empty {text-align:center;color:#8795a5;padding:25px}
+body.receptionist-book-appointment-1-html .quick-actions {display:flex;gap:10px;flex-wrap:wrap}
+
+
+@media (max-width:1050px) {
+body.receptionist-book-appointment-1-html .cards {grid-template-columns:repeat(2,1fr)}
+body.receptionist-book-appointment-1-html .doctor-grid {grid-template-columns:repeat(2,1fr)}
+}
+
+
+@media (max-width:700px) {
+body.receptionist-book-appointment-1-html .sidebar {width:70px;padding:18px 8px}
+body.receptionist-book-appointment-1-html .brand {font-size:0;padding:8px 10px 28px}
+body.receptionist-book-appointment-1-html .brand:after {content:"OD";font-size:19px}
+body.receptionist-book-appointment-1-html .role-label,
+body.receptionist-book-appointment-1-html .nav-text,
+body.receptionist-book-appointment-1-html .side-footer {display:none}
+body.receptionist-book-appointment-1-html .nav a {justify-content:center;padding:13px 4px}
+body.receptionist-book-appointment-1-html .main {margin-left:70px;width:calc(100% - 70px);padding:20px 13px}
+body.receptionist-book-appointment-1-html .cards {gap:9px}
+body.receptionist-book-appointment-1-html .stat {padding:12px}
+body.receptionist-book-appointment-1-html .stat-num {font-size:23px}
+body.receptionist-book-appointment-1-html h1 {font-size:21px}
+body.receptionist-book-appointment-1-html .user-chip {font-size:0}
+body.receptionist-book-appointment-1-html .form-grid {grid-template-columns:1fr}
+body.receptionist-book-appointment-1-html .field.full {grid-column:auto}
+body.receptionist-book-appointment-1-html .doctor-grid {grid-template-columns:1fr}
+body.receptionist-book-appointment-1-html .panel {padding:14px}
+}
+
+
+  
+body.receptionist-book-appointment-1-html .queue-ready {background:#e7f7ee;color:#168653}
+body.receptionist-book-appointment-1-html .queue-wait {background:#fff4df;color:#a66a10}
+body.receptionist-book-appointment-1-html .receipt {max-width:720px;padding:24px;border:1px dashed #9bb8b2;margin-top:18px;background:#fff}
+body.receptionist-book-appointment-1-html .receipt h2 {text-align:center;margin-bottom:8px}
+body.receptionist-book-appointment-1-html .receipt p {font-size:13px;line-height:1.8}
+body.receptionist-book-appointment-1-html .inline-form {display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+body.receptionist-book-appointment-1-html .inline-form input,
+body.receptionist-book-appointment-1-html .inline-form select {max-width:180px}
+body.receptionist-book-appointment-1-html .doctor-section {margin:18px 0}
+body.receptionist-book-appointment-1-html .doctor-section h3 {font-size:15px;margin-bottom:10px;color:#164b49}
+
+
+
+/* Styles from home page(2).html */
+
+        
+body.home-page-2-html * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        
+body.home-page-2-html {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f8f7;
+            color: #183b3a;
+        }
+
+
+        
+/* Navigation */
+
+
+        
+body.home-page-2-html .navbar {
+            height: 85px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            border-bottom: 1px solid #e5edf4;
+        }
+
+
+        
+body.home-page-2-html .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: #164b49;
+        }
+
+
+        
+body.home-page-2-html .nav-buttons {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+
+        
+body.home-page-2-html .nav-buttons a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 700;
+            color: #164b49;
+        }
+
+
+        
+body.home-page-2-html .signup-btn {
+            background: #0f8b8d;
+            color: white !important;
+            padding: 15px 22px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+
+        
+body.home-page-2-html .signup-btn:hover {
+            background: #0b7374;
+        }
+
+
+        
+/* Hero Section */
+
+
+        
+body.home-page-2-html .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            padding: 70px 11.8%;
+            background: linear-gradient(120deg, #edf7f5, #e4f4f1);
+        }
+
+
+        
+body.home-page-2-html .hero-content {
+            max-width: 680px;
+        }
+
+
+        
+body.home-page-2-html .tagline {
+            color: #159b83;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+
+
+        
+body.home-page-2-html .hero h1 {
+            font-size: clamp(42px, 5vw, 65px);
+            line-height: 1.12;
+            color: #183b3a;
+            margin-bottom: 25px;
+        }
+
+
+        
+body.home-page-2-html .hero h1 span {
+            color: #159b83;
+        }
+
+
+        
+body.home-page-2-html .hero-description {
+            color: #657b91;
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 550px;
+            margin-bottom: 35px;
+        }
+
+
+        
+body.home-page-2-html .hero-buttons {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+
+        
+body.home-page-2-html .primary-btn {
+            background: #0f8b8d;
+            color: white;
+            text-decoration: none;
+            padding: 18px 24px;
+            border-radius: 9px;
+            font-size: 15px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+
+        
+body.home-page-2-html .primary-btn:hover {
+            background: #0b7374;
+            transform: translateY(-2px);
+        }
+
+
+        
+body.home-page-2-html .secondary-btn {
+            color: #164b49;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+
+        
+body.home-page-2-html .secondary-btn span {
+            color: #159b83;
+            font-size: 21px;
+            margin-left: 7px;
+        }
+
+
+        
+body.home-page-2-html .features {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 40px;
+            color: #8293a5;
+            font-size: 13px;
+        }
+
+
+        
+body.home-page-2-html .dot {
+            height: 8px;
+            width: 8px;
+            background: #159b83;
+            border-radius: 50%;
+        }
+
+
+        
+/* About Section */
+
+
+        
+body.home-page-2-html .about {
+            background: #ffffff;
+            padding: 75px 7%;
+            text-align: center;
+        }
+
+
+        
+body.home-page-2-html .about h2 {
+            font-size: 30px;
+            color: #183b3a;
+            margin-bottom: 15px;
+        }
+
+
+        
+body.home-page-2-html .about p {
+            max-width: 700px;
+            margin: auto;
+            color: #718096;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+
+        
+/* Footer */
+
+
+        
+body.home-page-2-html footer {
+            background: #164b49;
+            color: #ffffff;
+            text-align: center;
+            padding: 23px;
+            font-size: 13px;
+        }
+
+
+        
+/* Responsive */
+
+
+        
+@media (max-width: 768px) {
+
+            
+body.home-page-2-html .navbar {
+                height: 75px;
+                padding: 0 5%;
+            }
+
+
+            
+body.home-page-2-html .logo {
+                font-size: 16px;
+            }
+
+
+            
+body.home-page-2-html .nav-buttons {
+                gap: 15px;
+            }
+
+
+            
+body.home-page-2-html .nav-buttons a {
+                font-size: 13px;
+            }
+
+
+            
+body.home-page-2-html .signup-btn {
+                padding: 12px 14px;
+            }
+
+
+            
+body.home-page-2-html .hero {
+                min-height: 580px;
+                padding: 65px 7%;
+            }
+
+
+            
+body.home-page-2-html .hero h1 {
+                font-size: 45px;
+            }
+
+
+            
+body.home-page-2-html .hero-description {
+                font-size: 15px;
+            }
+
+        
+}
+
+
+        
+@media (max-width: 480px) {
+
+            
+body.home-page-2-html .logo {
+                font-size: 13px;
+            }
+
+
+            
+body.home-page-2-html .nav-buttons {
+                gap: 10px;
+            }
+
+
+            
+body.home-page-2-html .nav-buttons a {
+                font-size: 12px;
+            }
+
+
+            
+body.home-page-2-html .signup-btn {
+                padding: 11px 10px;
+            }
+
+
+            
+body.home-page-2-html .hero h1 {
+                font-size: 38px;
+            }
+
+
+            
+body.home-page-2-html .hero-buttons {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+
+            
+body.home-page-2-html .about h2 {
+                font-size: 25px;
+            }
+
+        
+}
+
+    
+
+/* Styles from receptionist queue.html */
+
+
+body.receptionist-queue-html * {margin:0;padding:0;box-sizing:border-box}
+
+
+body.receptionist-queue-html {font-family:Arial,Helvetica,sans-serif;background:#f2f8f7;color:#183b3a}
+
+
+body.receptionist-queue-html a {text-decoration:none;color:inherit}
+
+
+body.receptionist-queue-html .layout {display:flex;min-height:100vh}
+
+
+body.receptionist-queue-html .sidebar {width:250px;background:#164b49;color:#fff;position:fixed;inset:0 auto 0 0;padding:25px 16px;display:flex;flex-direction:column;z-index:10}
+
+
+body.receptionist-queue-html .brand {font-size:21px;font-weight:800;padding:5px 12px 32px;line-height:1.4}
+
+
+body.receptionist-queue-html .brand span {color:#69c9b8}
+
+
+body.receptionist-queue-html .role-label {font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#a9c9c3;padding:0 12px 12px}
+
+
+body.receptionist-queue-html .nav a {display:flex;gap:12px;align-items:center;padding:13px 12px;margin:3px 0;border-radius:8px;color:#dcefeb;font-size:14px}
+
+
+body.receptionist-queue-html .nav a:hover,
+body.receptionist-queue-html .nav a.active {background:#236b67;color:#fff}
+
+
+body.receptionist-queue-html .nav-icon {width:20px;text-align:center;font-size:17px}
+
+
+body.receptionist-queue-html .side-footer {margin-top:auto;padding:15px 12px;color:#b8d2cc;font-size:12px;line-height:1.6}
+
+
+body.receptionist-queue-html .main {margin-left:250px;width:calc(100% - 250px);padding:28px 34px 45px}
+
+
+body.receptionist-queue-html .topbar {display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:28px}
+
+
+body.receptionist-queue-html .crumb {font-size:12px;color:#718096;margin-bottom:6px}
+
+
+body.receptionist-queue-html h1 {font-size:26px;color:#183b3a}
+
+
+body.receptionist-queue-html .user-chip {display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e3eaf1;border-radius:30px;padding:8px 13px;font-size:13px}
+
+
+body.receptionist-queue-html .avatar {height:35px;width:35px;border-radius:50%;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-weight:800}
+
+
+body.receptionist-queue-html .muted {font-size:12px;color:#718096}
+
+
+body.receptionist-queue-html .cards {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:23px}
+
+
+body.receptionist-queue-html .stat,
+body.receptionist-queue-html .panel,
+body.receptionist-queue-html .form-card,
+body.receptionist-queue-html .doctor-card,
+body.receptionist-queue-html .profile-card {background:#fff;border:1px solid #e4ebf2;border-radius:12px;box-shadow:0 5px 18px rgba(25,55,88,.04)}
+
+
+body.receptionist-queue-html .stat {padding:19px}
+body.receptionist-queue-html .stat-head {display:flex;justify-content:space-between;align-items:center;color:#718096;font-size:13px}
+
+
+body.receptionist-queue-html .stat-icon {width:38px;height:38px;border-radius:10px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:18px}
+
+
+body.receptionist-queue-html .stat-num {font-size:29px;font-weight:800;margin-top:12px;color:#183b3a}
+body.receptionist-queue-html .stat-note {font-size:11px;color:#8795a5;margin-top:4px}
+
+
+body.receptionist-queue-html .panel {padding:20px;margin-bottom:20px}
+body.receptionist-queue-html .panel-head {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px}
+
+
+body.receptionist-queue-html h2 {font-size:17px}
+body.receptionist-queue-html .toolbar {display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}
+
+
+body.receptionist-queue-html input,
+body.receptionist-queue-html select,
+body.receptionist-queue-html textarea {font:inherit;font-size:13px;color:#183b3a;border:1px solid #d9e3ed;border-radius:7px;padding:11px 12px;background:#fff;outline:none;width:100%}
+
+
+body.receptionist-queue-html input:focus,
+body.receptionist-queue-html select:focus,
+body.receptionist-queue-html textarea:focus {border-color:#0f8b8d;box-shadow:0 0 0 3px #0f8b8d1a}
+
+
+body.receptionist-queue-html .search {flex:1;min-width:210px}
+body.receptionist-queue-html .filter {max-width:180px}
+
+
+body.receptionist-queue-html .btn {display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:7px;padding:10px 14px;font-size:12px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-queue-html .primary {background:#0f8b8d;color:#fff}
+body.receptionist-queue-html .light {background:#e1f3ef;color:#0b7374}
+body.receptionist-queue-html .danger {background:#fff0f0;color:#c43c3c}
+body.receptionist-queue-html .success {background:#e7f7ee;color:#168653}
+
+
+body.receptionist-queue-html table {width:100%;border-collapse:collapse;min-width:660px}
+body.receptionist-queue-html th {text-align:left;padding:12px 10px;border-bottom:1px solid #e5ebf2;color:#8492a1;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+
+
+body.receptionist-queue-html td {padding:14px 10px;border-bottom:1px solid #edf1f5;font-size:12px}
+body.receptionist-queue-html tbody tr:last-child td {border-bottom:0}
+
+
+body.receptionist-queue-html .table-wrap {overflow-x:auto}
+body.receptionist-queue-html .person {font-weight:700}
+body.receptionist-queue-html .sub {display:block;color:#8795a5;font-size:11px;margin-top:4px}
+
+
+body.receptionist-queue-html .status {display:inline-block;padding:5px 9px;border-radius:20px;font-size:10px;font-weight:700}
+
+
+body.receptionist-queue-html .Confirmed,
+body.receptionist-queue-html .Received,
+body.receptionist-queue-html .Available {background:#e7f7ee;color:#168653}
+body.receptionist-queue-html .Pending {background:#fff4df;color:#a66a10}
+body.receptionist-queue-html .Cancelled {background:#ffeded;color:#c43d3d}
+body.receptionist-queue-html .Completed {background:#eaf1ff;color:#3569b2}
+body.receptionist-queue-html .Unavailable {background:#f0f1f3;color:#6e7782}
+
+
+body.receptionist-queue-html .actions {display:flex;gap:6px;flex-wrap:wrap}
+body.receptionist-queue-html .small {border:0;border-radius:6px;padding:6px 8px;font-size:10px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-queue-html .form-card {padding:22px;max-width:880px}
+body.receptionist-queue-html .form-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:19px}
+
+
+body.receptionist-queue-html .field label {display:block;font-size:12px;font-weight:700;margin-bottom:7px;color:#304b65}
+body.receptionist-queue-html .field.full {grid-column:1/-1}
+
+
+body.receptionist-queue-html .form-actions {display:flex;gap:9px;margin-top:20px}
+body.receptionist-queue-html .notice {padding:12px 14px;border-radius:8px;background:#eaf6f3;color:#315f83;font-size:12px;margin-top:15px}
+
+
+body.receptionist-queue-html .doctor-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.receptionist-queue-html .doctor-card {padding:19px}
+body.receptionist-queue-html .doctor-icon {height:48px;width:48px;border-radius:12px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:22px;margin-bottom:13px}
+
+
+body.receptionist-queue-html .doctor-card h3 {font-size:15px;margin-bottom:5px}
+body.receptionist-queue-html .doctor-card p {font-size:12px;color:#718096;margin-bottom:12px}
+body.receptionist-queue-html .fee {font-size:15px;font-weight:800;margin:12px 0}
+
+
+body.receptionist-queue-html .profile-card {padding:24px;max-width:680px}
+body.receptionist-queue-html .profile-head {display:flex;align-items:center;gap:14px;margin-bottom:20px}
+body.receptionist-queue-html .profile-avatar {width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:#e1f3ef;color:#0f8b8d;font-size:24px;font-weight:800}
+
+
+body.receptionist-queue-html .empty {text-align:center;color:#8795a5;padding:25px}
+body.receptionist-queue-html .quick-actions {display:flex;gap:10px;flex-wrap:wrap}
+
+
+@media (max-width:1050px) {
+body.receptionist-queue-html .cards {grid-template-columns:repeat(2,1fr)}
+body.receptionist-queue-html .doctor-grid {grid-template-columns:repeat(2,1fr)}
+}
+
+
+@media (max-width:700px) {
+body.receptionist-queue-html .sidebar {width:70px;padding:18px 8px}
+body.receptionist-queue-html .brand {font-size:0;padding:8px 10px 28px}
+body.receptionist-queue-html .brand:after {content:"OD";font-size:19px}
+body.receptionist-queue-html .role-label,
+body.receptionist-queue-html .nav-text,
+body.receptionist-queue-html .side-footer {display:none}
+body.receptionist-queue-html .nav a {justify-content:center;padding:13px 4px}
+body.receptionist-queue-html .main {margin-left:70px;width:calc(100% - 70px);padding:20px 13px}
+body.receptionist-queue-html .cards {gap:9px}
+body.receptionist-queue-html .stat {padding:12px}
+body.receptionist-queue-html .stat-num {font-size:23px}
+body.receptionist-queue-html h1 {font-size:21px}
+body.receptionist-queue-html .user-chip {font-size:0}
+body.receptionist-queue-html .form-grid {grid-template-columns:1fr}
+body.receptionist-queue-html .field.full {grid-column:auto}
+body.receptionist-queue-html .doctor-grid {grid-template-columns:1fr}
+body.receptionist-queue-html .panel {padding:14px}
+}
+
+
+  
+body.receptionist-queue-html .queue-ready {background:#e7f7ee;color:#168653}
+body.receptionist-queue-html .queue-wait {background:#fff4df;color:#a66a10}
+body.receptionist-queue-html .receipt {max-width:720px;padding:24px;border:1px dashed #9bb8b2;margin-top:18px;background:#fff}
+body.receptionist-queue-html .receipt h2 {text-align:center;margin-bottom:8px}
+body.receptionist-queue-html .receipt p {font-size:13px;line-height:1.8}
+body.receptionist-queue-html .inline-form {display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+body.receptionist-queue-html .inline-form input,
+body.receptionist-queue-html .inline-form select {max-width:180px}
+body.receptionist-queue-html .doctor-section {margin:18px 0}
+body.receptionist-queue-html .doctor-section h3 {font-size:15px;margin-bottom:10px;color:#164b49}
+
+
+
+/* Styles from log in(2).html */
+
+
+body.log-in-2-html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+body.log-in-2-html {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e4f4f1, #d9efeb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+
+
+body.log-in-2-html .login-container {
+    width: 100%;
+    max-width: 440px;
+    background: white;
+    padding: 38px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(20, 60, 100, 0.12);
+}
+
+
+
+body.log-in-2-html .back-home {
+    display: inline-block;
+    color: #0f8b8d;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+
+body.log-in-2-html .logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+
+body.log-in-2-html .logo h2 {
+    color: #164b49;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+
+
+body.log-in-2-html .logo p {
+    color: #7a8798;
+    font-size: 13px;
+}
+
+
+
+body.log-in-2-html h3 {
+    color: #253449;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+
+
+body.log-in-2-html .subtitle {
+    color: #8793a4;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+
+
+body.log-in-2-html .form-group {
+    margin-bottom: 18px;
+}
+
+
+
+body.log-in-2-html label {
+    display: block;
+    color: #34445a;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+
+body.log-in-2-html input,
+body.log-in-2-html select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d9e0e9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+}
+
+
+
+body.log-in-2-html input:focus,
+body.log-in-2-html select:focus {
+    border-color: #0f8b8d;
+}
+
+
+
+body.log-in-2-html .remember-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 22px;
+    font-size: 12px;
+}
+
+
+
+body.log-in-2-html .remember {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+
+body.log-in-2-html .remember input {
+    width: auto;
+}
+
+
+
+body.log-in-2-html .remember label {
+    margin: 0;
+    font-weight: normal;
+}
+
+
+
+body.log-in-2-html .forgot {
+    color: #0f8b8d;
+    text-decoration: none;
+}
+
+
+
+body.log-in-2-html .login-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #0f8b8d;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+body.log-in-2-html .login-btn:hover {
+    background: #0b7374;
+}
+
+
+
+body.log-in-2-html .demo-login {
+    margin-top: 20px;
+    padding: 16px;
+    background: #eaf6f3;
+    border: 1px solid #bfe4dc;
+    border-radius: 10px;
+    color: #263449;
+}
+
+
+
+body.log-in-2-html .demo-login h4 {
+    color: #0b7374;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+
+body.log-in-2-html .demo-login p {
+    font-size: 13px;
+    margin: 7px 0;
+}
+
+
+
+body.log-in-2-html .demo-login span {
+    font-weight: bold;
+    color: #164b49;
+}
+
+
+
+body.log-in-2-html .signup-text {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 13px;
+    color: #77859a;
+}
+
+
+
+body.log-in-2-html .signup-text a {
+    color: #0f8b8d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+body.log-in-2-html .footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #a0aab7;
+    font-size: 11px;
+}
+
+
+
+@media (max-width: 480px) {
+
+    
+body.log-in-2-html .login-container {
+        padding: 25px;
+    }
+
+
+}
+
+
+
+/* Styles from receptionist appointments(1).html */
+
+
+body.receptionist-appointments-1-html * {margin:0;padding:0;box-sizing:border-box}
+
+
+body.receptionist-appointments-1-html {font-family:Arial,Helvetica,sans-serif;background:#f2f8f7;color:#183b3a}
+
+
+body.receptionist-appointments-1-html a {text-decoration:none;color:inherit}
+
+
+body.receptionist-appointments-1-html .layout {display:flex;min-height:100vh}
+
+
+body.receptionist-appointments-1-html .sidebar {width:250px;background:#164b49;color:#fff;position:fixed;inset:0 auto 0 0;padding:25px 16px;display:flex;flex-direction:column;z-index:10}
+
+
+body.receptionist-appointments-1-html .brand {font-size:21px;font-weight:800;padding:5px 12px 32px;line-height:1.4}
+
+
+body.receptionist-appointments-1-html .brand span {color:#69c9b8}
+
+
+body.receptionist-appointments-1-html .role-label {font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#a9c9c3;padding:0 12px 12px}
+
+
+body.receptionist-appointments-1-html .nav a {display:flex;gap:12px;align-items:center;padding:13px 12px;margin:3px 0;border-radius:8px;color:#dcefeb;font-size:14px}
+
+
+body.receptionist-appointments-1-html .nav a:hover,
+body.receptionist-appointments-1-html .nav a.active {background:#236b67;color:#fff}
+
+
+body.receptionist-appointments-1-html .nav-icon {width:20px;text-align:center;font-size:17px}
+
+
+body.receptionist-appointments-1-html .side-footer {margin-top:auto;padding:15px 12px;color:#b8d2cc;font-size:12px;line-height:1.6}
+
+
+body.receptionist-appointments-1-html .main {margin-left:250px;width:calc(100% - 250px);padding:28px 34px 45px}
+
+
+body.receptionist-appointments-1-html .topbar {display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:28px}
+
+
+body.receptionist-appointments-1-html .crumb {font-size:12px;color:#718096;margin-bottom:6px}
+
+
+body.receptionist-appointments-1-html h1 {font-size:26px;color:#183b3a}
+
+
+body.receptionist-appointments-1-html .user-chip {display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e3eaf1;border-radius:30px;padding:8px 13px;font-size:13px}
+
+
+body.receptionist-appointments-1-html .avatar {height:35px;width:35px;border-radius:50%;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-weight:800}
+
+
+body.receptionist-appointments-1-html .muted {font-size:12px;color:#718096}
+
+
+body.receptionist-appointments-1-html .cards {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:23px}
+
+
+body.receptionist-appointments-1-html .stat,
+body.receptionist-appointments-1-html .panel,
+body.receptionist-appointments-1-html .form-card,
+body.receptionist-appointments-1-html .doctor-card,
+body.receptionist-appointments-1-html .profile-card {background:#fff;border:1px solid #e4ebf2;border-radius:12px;box-shadow:0 5px 18px rgba(25,55,88,.04)}
+
+
+body.receptionist-appointments-1-html .stat {padding:19px}
+body.receptionist-appointments-1-html .stat-head {display:flex;justify-content:space-between;align-items:center;color:#718096;font-size:13px}
+
+
+body.receptionist-appointments-1-html .stat-icon {width:38px;height:38px;border-radius:10px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:18px}
+
+
+body.receptionist-appointments-1-html .stat-num {font-size:29px;font-weight:800;margin-top:12px;color:#183b3a}
+body.receptionist-appointments-1-html .stat-note {font-size:11px;color:#8795a5;margin-top:4px}
+
+
+body.receptionist-appointments-1-html .panel {padding:20px;margin-bottom:20px}
+body.receptionist-appointments-1-html .panel-head {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px}
+
+
+body.receptionist-appointments-1-html h2 {font-size:17px}
+body.receptionist-appointments-1-html .toolbar {display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}
+
+
+body.receptionist-appointments-1-html input,
+body.receptionist-appointments-1-html select,
+body.receptionist-appointments-1-html textarea {font:inherit;font-size:13px;color:#183b3a;border:1px solid #d9e3ed;border-radius:7px;padding:11px 12px;background:#fff;outline:none;width:100%}
+
+
+body.receptionist-appointments-1-html input:focus,
+body.receptionist-appointments-1-html select:focus,
+body.receptionist-appointments-1-html textarea:focus {border-color:#0f8b8d;box-shadow:0 0 0 3px #0f8b8d1a}
+
+
+body.receptionist-appointments-1-html .search {flex:1;min-width:210px}
+body.receptionist-appointments-1-html .filter {max-width:180px}
+
+
+body.receptionist-appointments-1-html .btn {display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:7px;padding:10px 14px;font-size:12px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-appointments-1-html .primary {background:#0f8b8d;color:#fff}
+body.receptionist-appointments-1-html .light {background:#e1f3ef;color:#0b7374}
+body.receptionist-appointments-1-html .danger {background:#fff0f0;color:#c43c3c}
+body.receptionist-appointments-1-html .success {background:#e7f7ee;color:#168653}
+
+
+body.receptionist-appointments-1-html table {width:100%;border-collapse:collapse;min-width:660px}
+body.receptionist-appointments-1-html th {text-align:left;padding:12px 10px;border-bottom:1px solid #e5ebf2;color:#8492a1;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+
+
+body.receptionist-appointments-1-html td {padding:14px 10px;border-bottom:1px solid #edf1f5;font-size:12px}
+body.receptionist-appointments-1-html tbody tr:last-child td {border-bottom:0}
+
+
+body.receptionist-appointments-1-html .table-wrap {overflow-x:auto}
+body.receptionist-appointments-1-html .person {font-weight:700}
+body.receptionist-appointments-1-html .sub {display:block;color:#8795a5;font-size:11px;margin-top:4px}
+
+
+body.receptionist-appointments-1-html .status {display:inline-block;padding:5px 9px;border-radius:20px;font-size:10px;font-weight:700}
+
+
+body.receptionist-appointments-1-html .Confirmed,
+body.receptionist-appointments-1-html .Received,
+body.receptionist-appointments-1-html .Available {background:#e7f7ee;color:#168653}
+body.receptionist-appointments-1-html .Pending {background:#fff4df;color:#a66a10}
+body.receptionist-appointments-1-html .Cancelled {background:#ffeded;color:#c43d3d}
+body.receptionist-appointments-1-html .Completed {background:#eaf1ff;color:#3569b2}
+body.receptionist-appointments-1-html .Unavailable {background:#f0f1f3;color:#6e7782}
+
+
+body.receptionist-appointments-1-html .actions {display:flex;gap:6px;flex-wrap:wrap}
+body.receptionist-appointments-1-html .small {border:0;border-radius:6px;padding:6px 8px;font-size:10px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-appointments-1-html .form-card {padding:22px;max-width:880px}
+body.receptionist-appointments-1-html .form-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:19px}
+
+
+body.receptionist-appointments-1-html .field label {display:block;font-size:12px;font-weight:700;margin-bottom:7px;color:#304b65}
+body.receptionist-appointments-1-html .field.full {grid-column:1/-1}
+
+
+body.receptionist-appointments-1-html .form-actions {display:flex;gap:9px;margin-top:20px}
+body.receptionist-appointments-1-html .notice {padding:12px 14px;border-radius:8px;background:#eaf6f3;color:#315f83;font-size:12px;margin-top:15px}
+
+
+body.receptionist-appointments-1-html .doctor-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.receptionist-appointments-1-html .doctor-card {padding:19px}
+body.receptionist-appointments-1-html .doctor-icon {height:48px;width:48px;border-radius:12px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:22px;margin-bottom:13px}
+
+
+body.receptionist-appointments-1-html .doctor-card h3 {font-size:15px;margin-bottom:5px}
+body.receptionist-appointments-1-html .doctor-card p {font-size:12px;color:#718096;margin-bottom:12px}
+body.receptionist-appointments-1-html .fee {font-size:15px;font-weight:800;margin:12px 0}
+
+
+body.receptionist-appointments-1-html .profile-card {padding:24px;max-width:680px}
+body.receptionist-appointments-1-html .profile-head {display:flex;align-items:center;gap:14px;margin-bottom:20px}
+body.receptionist-appointments-1-html .profile-avatar {width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:#e1f3ef;color:#0f8b8d;font-size:24px;font-weight:800}
+
+
+body.receptionist-appointments-1-html .empty {text-align:center;color:#8795a5;padding:25px}
+body.receptionist-appointments-1-html .quick-actions {display:flex;gap:10px;flex-wrap:wrap}
+
+
+@media (max-width:1050px) {
+body.receptionist-appointments-1-html .cards {grid-template-columns:repeat(2,1fr)}
+body.receptionist-appointments-1-html .doctor-grid {grid-template-columns:repeat(2,1fr)}
+}
+
+
+@media (max-width:700px) {
+body.receptionist-appointments-1-html .sidebar {width:70px;padding:18px 8px}
+body.receptionist-appointments-1-html .brand {font-size:0;padding:8px 10px 28px}
+body.receptionist-appointments-1-html .brand:after {content:"OD";font-size:19px}
+body.receptionist-appointments-1-html .role-label,
+body.receptionist-appointments-1-html .nav-text,
+body.receptionist-appointments-1-html .side-footer {display:none}
+body.receptionist-appointments-1-html .nav a {justify-content:center;padding:13px 4px}
+body.receptionist-appointments-1-html .main {margin-left:70px;width:calc(100% - 70px);padding:20px 13px}
+body.receptionist-appointments-1-html .cards {gap:9px}
+body.receptionist-appointments-1-html .stat {padding:12px}
+body.receptionist-appointments-1-html .stat-num {font-size:23px}
+body.receptionist-appointments-1-html h1 {font-size:21px}
+body.receptionist-appointments-1-html .user-chip {font-size:0}
+body.receptionist-appointments-1-html .form-grid {grid-template-columns:1fr}
+body.receptionist-appointments-1-html .field.full {grid-column:auto}
+body.receptionist-appointments-1-html .doctor-grid {grid-template-columns:1fr}
+body.receptionist-appointments-1-html .panel {padding:14px}
+}
+
+
+  
+body.receptionist-appointments-1-html .queue-ready {background:#e7f7ee;color:#168653}
+body.receptionist-appointments-1-html .queue-wait {background:#fff4df;color:#a66a10}
+body.receptionist-appointments-1-html .receipt {max-width:720px;padding:24px;border:1px dashed #9bb8b2;margin-top:18px;background:#fff}
+body.receptionist-appointments-1-html .receipt h2 {text-align:center;margin-bottom:8px}
+body.receptionist-appointments-1-html .receipt p {font-size:13px;line-height:1.8}
+body.receptionist-appointments-1-html .inline-form {display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+body.receptionist-appointments-1-html .inline-form input,
+body.receptionist-appointments-1-html .inline-form select {max-width:180px}
+body.receptionist-appointments-1-html .doctor-section {margin:18px 0}
+body.receptionist-appointments-1-html .doctor-section h3 {font-size:15px;margin-bottom:10px;color:#164b49}
+
+
+
+/* Styles from forgot password(2).html */
+
+        
+body.forgot-password-2-html * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        
+body.forgot-password-2-html {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f8f7;
+            color: #183b3a;
+        }
+
+
+        
+body.forgot-password-2-html .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+        }
+
+
+        
+body.forgot-password-2-html .forgot-card {
+            width: 100%;
+            max-width: 460px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 13px;
+            box-shadow: 0 8px 30px rgba(25, 55, 88, 0.08);
+        }
+
+
+        
+body.forgot-password-2-html .back-link {
+            display: inline-block;
+            color: #0f8b8d;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+
+        
+body.forgot-password-2-html .icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e1f3ef;
+            color: #0f8b8d;
+            border-radius: 12px;
+            font-size: 27px;
+            margin-bottom: 22px;
+        }
+
+
+        
+body.forgot-password-2-html h1 {
+            font-size: 29px;
+            color: #183b3a;
+            margin-bottom: 12px;
+        }
+
+
+        
+body.forgot-password-2-html .subtitle {
+            color: #718096;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+
+        
+body.forgot-password-2-html .form-group {
+            margin-bottom: 22px;
+        }
+
+
+        
+body.forgot-password-2-html .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #304b65;
+        }
+
+
+        
+body.forgot-password-2-html .form-group input {
+            width: 100%;
+            height: 49px;
+            border: 1px solid #d9e3ed;
+            border-radius: 7px;
+            padding: 0 13px;
+            font-size: 14px;
+            outline: none;
+        }
+
+
+        
+body.forgot-password-2-html .form-group input:focus {
+            border-color: #0f8b8d;
+            box-shadow: 0 0 0 3px rgba(23, 109, 176, 0.1);
+        }
+
+
+        
+body.forgot-password-2-html .reset-btn {
+            width: 100%;
+            height: 49px;
+            background: #0f8b8d;
+            color: #ffffff;
+            border: none;
+            border-radius: 7px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+
+        
+body.forgot-password-2-html .reset-btn:hover {
+            background: #0b7374;
+        }
+
+
+        
+body.forgot-password-2-html .message {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 17px;
+            line-height: 1.6;
+        }
+
+
+        
+body.forgot-password-2-html .login-link {
+            text-align: center;
+            color: #718096;
+            font-size: 14px;
+            margin-top: 27px;
+        }
+
+
+        
+body.forgot-password-2-html .login-link a {
+            color: #0f8b8d;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+
+        
+@media (max-width: 520px) {
+
+            
+body.forgot-password-2-html .forgot-card {
+                padding: 28px 22px;
+            }
+
+
+            
+body.forgot-password-2-html h1 {
+                font-size: 25px;
+            }
+
+        
+}
+
+    
+
+/* Styles from receptionist patients(1).html */
+
+
+body.receptionist-patients-1-html * {margin:0;padding:0;box-sizing:border-box}
+
+
+body.receptionist-patients-1-html {font-family:Arial,Helvetica,sans-serif;background:#f2f8f7;color:#183b3a}
+
+
+body.receptionist-patients-1-html a {text-decoration:none;color:inherit}
+
+
+body.receptionist-patients-1-html .layout {display:flex;min-height:100vh}
+
+
+body.receptionist-patients-1-html .sidebar {width:250px;background:#164b49;color:#fff;position:fixed;inset:0 auto 0 0;padding:25px 16px;display:flex;flex-direction:column;z-index:10}
+
+
+body.receptionist-patients-1-html .brand {font-size:21px;font-weight:800;padding:5px 12px 32px;line-height:1.4}
+
+
+body.receptionist-patients-1-html .brand span {color:#69c9b8}
+
+
+body.receptionist-patients-1-html .role-label {font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#a9c9c3;padding:0 12px 12px}
+
+
+body.receptionist-patients-1-html .nav a {display:flex;gap:12px;align-items:center;padding:13px 12px;margin:3px 0;border-radius:8px;color:#dcefeb;font-size:14px}
+
+
+body.receptionist-patients-1-html .nav a:hover,
+body.receptionist-patients-1-html .nav a.active {background:#236b67;color:#fff}
+
+
+body.receptionist-patients-1-html .nav-icon {width:20px;text-align:center;font-size:17px}
+
+
+body.receptionist-patients-1-html .side-footer {margin-top:auto;padding:15px 12px;color:#b8d2cc;font-size:12px;line-height:1.6}
+
+
+body.receptionist-patients-1-html .main {margin-left:250px;width:calc(100% - 250px);padding:28px 34px 45px}
+
+
+body.receptionist-patients-1-html .topbar {display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:28px}
+
+
+body.receptionist-patients-1-html .crumb {font-size:12px;color:#718096;margin-bottom:6px}
+
+
+body.receptionist-patients-1-html h1 {font-size:26px;color:#183b3a}
+
+
+body.receptionist-patients-1-html .user-chip {display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e3eaf1;border-radius:30px;padding:8px 13px;font-size:13px}
+
+
+body.receptionist-patients-1-html .avatar {height:35px;width:35px;border-radius:50%;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-weight:800}
+
+
+body.receptionist-patients-1-html .muted {font-size:12px;color:#718096}
+
+
+body.receptionist-patients-1-html .cards {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:23px}
+
+
+body.receptionist-patients-1-html .stat,
+body.receptionist-patients-1-html .panel,
+body.receptionist-patients-1-html .form-card,
+body.receptionist-patients-1-html .doctor-card,
+body.receptionist-patients-1-html .profile-card {background:#fff;border:1px solid #e4ebf2;border-radius:12px;box-shadow:0 5px 18px rgba(25,55,88,.04)}
+
+
+body.receptionist-patients-1-html .stat {padding:19px}
+body.receptionist-patients-1-html .stat-head {display:flex;justify-content:space-between;align-items:center;color:#718096;font-size:13px}
+
+
+body.receptionist-patients-1-html .stat-icon {width:38px;height:38px;border-radius:10px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:18px}
+
+
+body.receptionist-patients-1-html .stat-num {font-size:29px;font-weight:800;margin-top:12px;color:#183b3a}
+body.receptionist-patients-1-html .stat-note {font-size:11px;color:#8795a5;margin-top:4px}
+
+
+body.receptionist-patients-1-html .panel {padding:20px;margin-bottom:20px}
+body.receptionist-patients-1-html .panel-head {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:17px}
+
+
+body.receptionist-patients-1-html h2 {font-size:17px}
+body.receptionist-patients-1-html .toolbar {display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}
+
+
+body.receptionist-patients-1-html input,
+body.receptionist-patients-1-html select,
+body.receptionist-patients-1-html textarea {font:inherit;font-size:13px;color:#183b3a;border:1px solid #d9e3ed;border-radius:7px;padding:11px 12px;background:#fff;outline:none;width:100%}
+
+
+body.receptionist-patients-1-html input:focus,
+body.receptionist-patients-1-html select:focus,
+body.receptionist-patients-1-html textarea:focus {border-color:#0f8b8d;box-shadow:0 0 0 3px #0f8b8d1a}
+
+
+body.receptionist-patients-1-html .search {flex:1;min-width:210px}
+body.receptionist-patients-1-html .filter {max-width:180px}
+
+
+body.receptionist-patients-1-html .btn {display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:7px;padding:10px 14px;font-size:12px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-patients-1-html .primary {background:#0f8b8d;color:#fff}
+body.receptionist-patients-1-html .light {background:#e1f3ef;color:#0b7374}
+body.receptionist-patients-1-html .danger {background:#fff0f0;color:#c43c3c}
+body.receptionist-patients-1-html .success {background:#e7f7ee;color:#168653}
+
+
+body.receptionist-patients-1-html table {width:100%;border-collapse:collapse;min-width:660px}
+body.receptionist-patients-1-html th {text-align:left;padding:12px 10px;border-bottom:1px solid #e5ebf2;color:#8492a1;font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+
+
+body.receptionist-patients-1-html td {padding:14px 10px;border-bottom:1px solid #edf1f5;font-size:12px}
+body.receptionist-patients-1-html tbody tr:last-child td {border-bottom:0}
+
+
+body.receptionist-patients-1-html .table-wrap {overflow-x:auto}
+body.receptionist-patients-1-html .person {font-weight:700}
+body.receptionist-patients-1-html .sub {display:block;color:#8795a5;font-size:11px;margin-top:4px}
+
+
+body.receptionist-patients-1-html .status {display:inline-block;padding:5px 9px;border-radius:20px;font-size:10px;font-weight:700}
+
+
+body.receptionist-patients-1-html .Confirmed,
+body.receptionist-patients-1-html .Received,
+body.receptionist-patients-1-html .Available {background:#e7f7ee;color:#168653}
+body.receptionist-patients-1-html .Pending {background:#fff4df;color:#a66a10}
+body.receptionist-patients-1-html .Cancelled {background:#ffeded;color:#c43d3d}
+body.receptionist-patients-1-html .Completed {background:#eaf1ff;color:#3569b2}
+body.receptionist-patients-1-html .Unavailable {background:#f0f1f3;color:#6e7782}
+
+
+body.receptionist-patients-1-html .actions {display:flex;gap:6px;flex-wrap:wrap}
+body.receptionist-patients-1-html .small {border:0;border-radius:6px;padding:6px 8px;font-size:10px;font-weight:700;cursor:pointer}
+
+
+body.receptionist-patients-1-html .form-card {padding:22px;max-width:880px}
+body.receptionist-patients-1-html .form-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:19px}
+
+
+body.receptionist-patients-1-html .field label {display:block;font-size:12px;font-weight:700;margin-bottom:7px;color:#304b65}
+body.receptionist-patients-1-html .field.full {grid-column:1/-1}
+
+
+body.receptionist-patients-1-html .form-actions {display:flex;gap:9px;margin-top:20px}
+body.receptionist-patients-1-html .notice {padding:12px 14px;border-radius:8px;background:#eaf6f3;color:#315f83;font-size:12px;margin-top:15px}
+
+
+body.receptionist-patients-1-html .doctor-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body.receptionist-patients-1-html .doctor-card {padding:19px}
+body.receptionist-patients-1-html .doctor-icon {height:48px;width:48px;border-radius:12px;background:#e1f3ef;color:#0f8b8d;display:grid;place-items:center;font-size:22px;margin-bottom:13px}
+
+
+body.receptionist-patients-1-html .doctor-card h3 {font-size:15px;margin-bottom:5px}
+body.receptionist-patients-1-html .doctor-card p {font-size:12px;color:#718096;margin-bottom:12px}
+body.receptionist-patients-1-html .fee {font-size:15px;font-weight:800;margin:12px 0}
+
+
+body.receptionist-patients-1-html .profile-card {padding:24px;max-width:680px}
+body.receptionist-patients-1-html .profile-head {display:flex;align-items:center;gap:14px;margin-bottom:20px}
+body.receptionist-patients-1-html .profile-avatar {width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:#e1f3ef;color:#0f8b8d;font-size:24px;font-weight:800}
+
+
+body.receptionist-patients-1-html .empty {text-align:center;color:#8795a5;padding:25px}
+body.receptionist-patients-1-html .quick-actions {display:flex;gap:10px;flex-wrap:wrap}
+
+
+@media (max-width:1050px) {
+body.receptionist-patients-1-html .cards {grid-template-columns:repeat(2,1fr)}
+body.receptionist-patients-1-html .doctor-grid {grid-template-columns:repeat(2,1fr)}
+}
+
+
+@media (max-width:700px) {
+body.receptionist-patients-1-html .sidebar {width:70px;padding:18px 8px}
+body.receptionist-patients-1-html .brand {font-size:0;padding:8px 10px 28px}
+body.receptionist-patients-1-html .brand:after {content:"OD";font-size:19px}
+body.receptionist-patients-1-html .role-label,
+body.receptionist-patients-1-html .nav-text,
+body.receptionist-patients-1-html .side-footer {display:none}
+body.receptionist-patients-1-html .nav a {justify-content:center;padding:13px 4px}
+body.receptionist-patients-1-html .main {margin-left:70px;width:calc(100% - 70px);padding:20px 13px}
+body.receptionist-patients-1-html .cards {gap:9px}
+body.receptionist-patients-1-html .stat {padding:12px}
+body.receptionist-patients-1-html .stat-num {font-size:23px}
+body.receptionist-patients-1-html h1 {font-size:21px}
+body.receptionist-patients-1-html .user-chip {font-size:0}
+body.receptionist-patients-1-html .form-grid {grid-template-columns:1fr}
+body.receptionist-patients-1-html .field.full {grid-column:auto}
+body.receptionist-patients-1-html .doctor-grid {grid-template-columns:1fr}
+body.receptionist-patients-1-html .panel {padding:14px}
+}
+
+
+  
+body.receptionist-patients-1-html .queue-ready {background:#e7f7ee;color:#168653}
+body.receptionist-patients-1-html .queue-wait {background:#fff4df;color:#a66a10}
+body.receptionist-patients-1-html .receipt {max-width:720px;padding:24px;border:1px dashed #9bb8b2;margin-top:18px;background:#fff}
+body.receptionist-patients-1-html .receipt h2 {text-align:center;margin-bottom:8px}
+body.receptionist-patients-1-html .receipt p {font-size:13px;line-height:1.8}
+body.receptionist-patients-1-html .inline-form {display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+body.receptionist-patients-1-html .inline-form input,
+body.receptionist-patients-1-html .inline-form select {max-width:180px}
+body.receptionist-patients-1-html .doctor-section {margin:18px 0}
+body.receptionist-patients-1-html .doctor-section h3 {font-size:15px;margin-bottom:10px;color:#164b49}
+
+
